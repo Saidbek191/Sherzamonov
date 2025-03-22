@@ -159,11 +159,7 @@ header a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-.container .home {
+.home {
   font-family: "Inter";
   background: url("/images/home/bg.jpg");
   background-color: rgba(0, 0, 0, 0.5);
@@ -173,11 +169,11 @@ header a {
   background-repeat: no-repeat;
   height: 100vh;
 }
-.container .home .home__info {
+.home .home__info {
   padding: 128px 0 0 0;
   color: #fff;
 }
-.container .home .home__info .home__sub {
+.home .home__info .home__sub {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -185,36 +181,42 @@ header a {
   padding: 0 0 24px 0;
   font-size: 16px;
 }
-.container .home .home__info .home__sub span {
+.home .home__info .home__sub span {
   font-weight: 900;
 }
-.container .home .home__info .home__title {
+.home .home__info .home__title {
   font-family: "Sen";
   font-size: 56px;
   line-height: 1.2;
   letter-spacing: -2px;
 }
-.container .home .home__info .home__date {
+.home .home__info .home__date {
   padding: 24px 0 16px 0;
   font-size: 16px;
   line-height: 1.8;
 }
-.container .home .home__info .home__date span {
+.home .home__info .home__date span {
   color: #FFD050;
 }
-.container .home .home__info .home__text {
+.home .home__info .home__text {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
 }
-.container .home__btn {
+
+.home__btn {
   margin: 48px 0 0 0;
   display: flex;
   align-items: center;
 }
-.container .home__btn a {
+.home__btn a {
   text-decoration: none;
   color: #232536;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .container .btn-yellow {
   display: inline-block;
