@@ -21,68 +21,71 @@ header {
 		text-decoration: none;
 	}
 }
+
+.home {
+	font-family: "Inter";
+	background: url('/images/home/bg.jpg');
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 100vh;
+	
+
+	.home__info {
+		// width: 804px;
+		padding: 128px 0 0 0;
+		color: $light;
+
+		.home__sub {
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			line-height: 2;	
+			padding: 0 0 24px 0;
+			font-size: 16px;
+			span{
+				font-weight: 900;
+			}
+		}
+		.home__title {
+			font-family: 'Sen';
+			font-size: 56px;
+			line-height: 1.2;
+			letter-spacing: -2px;
+		}
+		.home__date {
+			padding: 24px 0 16px 0;
+			font-size: 16px;
+			line-height: 1.8;
+			span {
+				color: $yellow;
+			}
+		}
+		.home__text {
+			font-size: 16px;
+			line-height: 1.8;
+			font-weight: 400;
+		}
+	}
+}
+.home__btn {
+	margin: 48px 0 0 0;
+	display: flex;
+	align-items: center;
+	a {
+		text-decoration: none;
+		color: $black;
+	}
+}
+
 .container {
 	max-width: $maxWidthContainer;
 	margin: 0 auto;
 	
 	
-		.home {
-			font-family: "Inter";
-			background: url('/images/home/bg.jpg');
-			background-color: rgba(0, 0, 0, 0.5);
-			background-blend-mode: overlay;
-			background-size: cover;
-			background-position: left;
-			background-repeat: no-repeat;
-			height: 100vh;
-			
-
-			.home__info {
-				// width: 804px;
-				padding: 128px 0 0 0;
-				color: $light;
-
-				.home__sub {
-					font-weight: 400;
-					text-transform: uppercase;
-					letter-spacing: 3px;
-					line-height: 2;	
-					padding: 0 0 24px 0;
-					font-size: 16px;
-					span{
-						font-weight: 900;
-					}
-				}
-				.home__title {
-					font-family: 'Sen';
-					font-size: 56px;
-					line-height: 1.2;
-					letter-spacing: -2px;
-				}
-				.home__date {
-					padding: 24px 0 16px 0;
-					font-size: 16px;
-					line-height: 1.8;
-					span {
-						color: $yellow;
-					}
-				}
-				.home__text {
-					font-size: 16px;
-					line-height: 1.8;
-					font-weight: 400;
-				}
-			}
-		}
-		.home__btn {
-			margin: 48px 0 0 0;
-			display: flex;
-			align-items: center;
-			a {
-				text-decoration: none;
-				color: $black;
-			}
-		}
+		
 		.btn-yellow {
 			display: inline-block;	
 			font-size: 18px;
