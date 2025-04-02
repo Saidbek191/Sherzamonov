@@ -1,0 +1,104 @@
+
+.about-mision {
+	top: 0;
+	left: 0;
+	margin: 132px 0 0 0;
+}
+
+.line_decor {
+	display: block;
+	position: relative;
+	width: 1061px;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		height: 24px;
+		right: 0;	
+	}
+	&::before {
+		width: 843px;
+		background-color: $yellow;
+		top: -24px;
+		margin-left: 421.5px;
+	}
+	&::after {
+		content: '';
+		width: 282px;
+		top: -24px;
+		margin-right: -219px;
+		background-color: $purple;
+	}
+}
+.about-mision__body {
+	background-color: $lavender;
+}
+.about-mision__column {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+.about__info {
+	padding: 96px 0 96px 80px;
+	flex: 1 1 135%;
+	align-items: center;
+}
+.about__sub {
+
+}
+.sub-title {
+	font-size: 16px;
+	line-height: 1.25px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: 'Inter';
+	padding: 0 0 24px 0;
+	color: $black;
+}
+.about__title {
+	display: block;
+	padding: 0 0 26px 0;
+}
+.title {
+	display: block;
+	font-family: 'Sen';
+	line-height: 1.2;
+	font-size: 36px;
+	letter-spacing: -2px;
+	color: $black;
+}
+.about__text {
+}
+.text {
+	font-family: 'Inter';
+	line-height: 2;
+	color: $mediumGrey;
+}
+.columns__more {
+	align-content: flex-start;
+}
+.misin__info {
+	flex: 0 1 auto;
+	padding: 98px 108px 138px 0;
+}
+.misin__sub {
+	line-height: 2;
+}
+.misin__title {
+	font-size: 28px;
+	line-height: 1.4;
+	letter-spacing: -1px;
+}
+.misin__text {
+	// line-height: 1;
+}
+
+.more-link {
+	display: block;
+	font-family: 'Sen';
+	padding: 40px 0 0 0;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.3;
+}

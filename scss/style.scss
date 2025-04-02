@@ -1,19 +1,16 @@
+/*  IIMPOR__SCSS__FILES  */
+
 @import './reset';
 @import './variables';
 @import './mixins';
 @import './header';
 @import './home';
 @import './featured-post';
+@import './about-mision';
 
 
-// <Шрифты>=========================================================
-
-// <Иконочные шрифты>===============================================
-// @import "icons";
-// </Иконочные шрифты>===============================================
-
+// container 1440px
 .container {
 	max-width: $maxWidthContainer;
-	margin: 0 auto;	
+	margin: 0 auto
 }
-

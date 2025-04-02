@@ -1,6 +1,7 @@
 header {
 	background-color: $black;
 	font-family: $fontFamily;
+
 	a {
 		color: $light;
 		text-decoration: none;
@@ -8,95 +9,190 @@ header {
 }
 
 
-.icon-menu {
-	display: none;
-	@media (max-width: 498px ) {
-		display: block;
-		position: absolute;
-		top: 32px;
-		right: 10px;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span {
-			transition: all 0.3s ease 0s;
-			top: calc(50% - 1px);
-			left: 0;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: $light;
-			&:first-child {
-				top: 0;
-			}
-			&:last-child {
-				top: auto;
-				bottom: 0;
-			}
-		}
-		&._active {
-			span {
-				transform: scale(0);
-				&:first-child {
-					transform: rotate(-45deg);
-					top: calc(50% - 1px);
-				}
-				&:last-child {
-					transform: rotate(45deg);
-					bottom: calc(50% - 1px);
-				}
-			}
-		}
-	}
-}
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
 
-.header__menu {
-}
-.menu {
-}
-.icon-menu {
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		z-index: 2;
+	}
 }
 
 .head {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
-	// padding: 0 80px;
 	height: 80px;
+	align-items: center;
+
+	.head__nav {
+		display: flex;
+	}
+
+	.head__list {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 2;
+
+		.head__link {
+			padding: 8px;
+			transition: all .3s ease;
+			border-bottom: 2px solid transparent;
+
+		}
+
+		.head__link:hover {
+			border-bottom: 2px solid $yellow;
+		}
+	}
 }
-.header-nav__logo {
+
+.head__logo {
 	font-size: 2rem;
 	font-weight: 900;
 	display: flex;
-	align-items: center;
-	span{
+	position: relative;
+	z-index: 3;
+
+	span {
 		color: $yellow;
 	}
 }
-.header-nav {
-	display: flex;
-	align-items: center;
+
+.head__menu {
+	display: none;
 }
-.header-nav__list {
-	display: flex;
-	gap: 24px;	
-		}
-	@media (max-width: 1289px) {
-		.head {
-		padding: 0 20px;
-		}
-		.home__info {
-			margin: 0 0 0 20px;
-		}
+
+/* RESPONSIVE FOR TABLET & PHONE */
+@media (max-width: 767px) {
+	body.lock {
+		overflow: hidden;
 	}
-	@media (max-width: 564px) {
-		.header-nav__logo {
-			font-size: 1.5rem;			
-		}
+
+	.head {
+		height: 50px;
 	}
-	@media (max-width: 498px) {
-		.header-nav {
-			display: none;
+
+	.head__logo {
+		font-size: 1.5rem;
+	}
+
+	.head__menu {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+
+		span {
+			position: absolute;
+			background-color: $light;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			transition: all .3s ease 0s;
+		}
+
+		&:before,
+		&::after {
+			content: '';
+			background-color: $light;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all .3s ease 0s;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		&.active span {
+			transform: scale(0);
+		}
+
+		&.active::before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+
+		&.active::after {
+			transform: rotate(-45deg);
+			bottom: 9px;
 		}
 	}
 
+	.head__nav {
+		position: fixed;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		padding: 80px 0 0 0;
+		justify-content: center;
+		font-size: 2rem;
+		text-align: center;
+		overflow: auto;
+		transition: all .3s ease 0s;
+
+		.head__list {
+			display: block;
+			align-content: center;
+
+			& li {
+				margin: 0 0 40px 0;
+			}
+
+			a {
+				color: $lightYellow;
+			}
+		}
+
+		&.active {
+			top: 0;
+		}
+	}
+}
+
+/* =========================================== */
+
+
+/* SOME BRAKE POINTS */
+@media (max-width: 1289px) {
+	.head {
+		padding: 0 20px;
+	}
+}
+
+// @media (max-width: 564px) {
+// 	.head-nav__logo {
+// 		font-size: 1.5rem;			
+// 	}
+// }
+@media (max-width: 767px) {
+	.head__nav {
+		display: none;
+	}
+}
+
+/* ========================================= */
