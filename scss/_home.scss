@@ -1,0 +1,85 @@
+.container {
+	max-width: $maxWidthContainer;
+	margin: 0 auto;
+} 
+	
+
+.home {
+	font-family: "Inter";
+	background: url('/images/home/bg.jpg');
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+
+.home__info {
+	// width: 804px;
+	padding: 128px 0 0 0;
+	color: $light;
+}
+
+		.home__sub {
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			line-height: 2;	
+			padding: 0 0 24px 0;
+			font-size: 1rem;
+			span{
+				font-weight: 900;
+			}
+		}
+		
+		.home__title {
+			font-family: 'Sen';
+			font-size: 3.5rem;
+			line-height: 1.2;
+			letter-spacing: -2px;
+		}
+		.home__date {
+			padding: 24px 0 16px 0;
+			font-size: 1rem;
+			line-height: 1.8;
+			span {
+				color: $yellow;
+			}
+		}
+		.home__text {
+			font-size: 1rem;
+			line-height: 1.8;
+			font-weight: 400;
+		}
+
+.home__btn {
+	margin: 3rem 0 0 0;
+	display: flex;
+	align-items: center;
+	@include button();
+
+	a {
+		text-decoration: none;
+		color: $black;
+	}
+}
+
+@media (max-width: 489px) {
+	.home {
+		height: 80vh;
+	}
+	.home__info {
+		padding: 60px 0 0 0;
+	}	
+	.home__title {
+		font-size: 2.5rem;
+	}
+	.home__date {
+		font-size: 0.8rem;
+	}
+	.home__text {
+		font-size: 0.8rem;
+	}
+}

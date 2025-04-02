@@ -1,3 +1,13 @@
 //<Миксины>=========================================================
 // @import "mixins";
 //</Миксины>========================================================
+
+@mixin button() {
+	display: inline-block;	
+	font-size: 1.3rem;
+	font-family: 'Sen';
+	font-weight: 700;
+	padding: 1rem 3rem;
+	background-color: $yellow;
+	margin: 2rem 0;
+}   

@@ -1,9 +1,19 @@
+header {
+	background-color: $black;
+	font-family: $fontFamily;
+	a {
+		color: $light;
+		text-decoration: none;
+	}
+}
+
+
 .icon-menu {
 	display: none;
-	@media (max-width: 750px ) {
+	@media (max-width: 498px ) {
 		display: block;
 		position: absolute;
-		top: 18px;
+		top: 32px;
 		right: 10px;
 		width: 30px;
 		height: 18px;
@@ -16,7 +26,7 @@
 			position: absolute;
 			width: 100%;
 			height: 2px;
-			background-color: #000;
+			background-color: $light;
 			&:first-child {
 				top: 0;
 			}
@@ -71,7 +81,7 @@
 	display: flex;
 	gap: 24px;	
 		}
-	@media (max-width: 1286px) {
+	@media (max-width: 1289px) {
 		.head {
 		padding: 0 20px;
 		}
@@ -79,9 +89,14 @@
 			margin: 0 0 0 20px;
 		}
 	}
-	@media (max-width: 622px) {
-		.home {
-		background-size: contain;
+	@media (max-width: 564px) {
+		.header-nav__logo {
+			font-size: 1.5rem;			
+		}
 	}
+	@media (max-width: 498px) {
+		.header-nav {
+			display: none;
+		}
 	}
 
