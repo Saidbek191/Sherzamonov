@@ -503,7 +503,7 @@ header::before {
 .about-mision {
   top: 0;
   left: 0;
-  margin: 132px 0 0 0;
+  margin: 8rem 0 0 0;
 }
 
 .line_decor {
@@ -514,19 +514,19 @@ header::before {
 .line_decor::before, .line_decor::after {
   content: "";
   position: absolute;
-  height: 24px;
+  height: 1.5rem;
   right: 0;
 }
 .line_decor::before {
   width: 64%;
   background-color: #FFD050;
-  top: -24px;
+  top: -1.5rem;
   margin-right: -6%;
 }
 .line_decor::after {
   content: "";
   width: 30%;
-  top: -24px;
+  top: -1.5rem;
   margin-right: -33.3%;
   background-color: #592EA9;
 }
@@ -536,7 +536,7 @@ header::before {
   justify-content: space-between;
   background-color: #F4F0F8;
 }
-.about-mision__body .sub-title {
+.about-mision__body.sub-title {
   display: flex;
   justify-content: space-between;
 }
@@ -649,6 +649,15 @@ header::before {
   }
 }
 @media (max-width: 767px) {
+  .line_decor::before, .line_decor::after {
+    height: 1rem;
+  }
+  .line_decor::before {
+    top: -1rem;
+  }
+  .line_decor::after {
+    top: -1rem;
+  }
   .about-mision__column {
     padding: 0 0.5rem;
   }
@@ -656,10 +665,68 @@ header::before {
     padding: 1.5rem 0;
   }
   .about-mision__column .mision__info {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
   .about-mision__column .more-link {
     padding: 1rem 0 0 0;
+  }
+}
+.about-me {
+  margin: 8rem 0 0 0;
+}
+
+.person_photo {
+  max-width: 949px;
+  position: absolute;
+}
+
+.about__content {
+  width: 706px;
+  position: relative;
+  left: 31%;
+  padding-top: 21.96rem;
+}
+
+.about__text-box {
+  padding: 5rem;
+  background-color: #fff;
+}
+
+.about-btn {
+  margin: 2rem 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .about-me {
+    margin: 2rem 0 0 0;
+  }
+  .content {
+    justify-content: center;
+  }
+  .person_photo {
+    display: none;
+  }
+  .about__content {
+    position: static;
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .about__text-box {
+    padding: 0.5rem;
+    background-color: #232536;
+  }
+  .full-name {
+    padding: 2rem 0 1rem 0;
+    color: #FFD050;
+  }
+  .biography,
+  .story {
+    color: #fff;
+  }
+  .about-btn {
+    margin: 2rem 0;
+    color: #232536;
   }
 }
 .container {

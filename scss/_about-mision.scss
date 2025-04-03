@@ -2,40 +2,19 @@
 .about-mision {
 	top: 0;
 	left: 0;
-	margin: 132px 0 0 0;
+	margin: 8rem 0 0 0;
 }
 
 .line_decor {
-	display: block;
-	position: relative;
-	width: 75%;
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		height: 24px;
-		right: 0;	
-	}
-	&::before {
-		width: 64%;
-		background-color: $yellow;
-		top: -24px;
-		margin-right: -6%;
-	}
-	&::after {
-		content: '';
-		width: 30%;
-		top: -24px;
-		margin-right: -33.3%;
-		background-color: $purple;
-	}
+	@include line();
 }
+
 .about-mision__body {
 	display: flex;
 	justify-content: space-between;
 	background-color: $lavender;
 
-	.sub-title {
+	&.sub-title {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -151,6 +130,18 @@
 }
 
 @media (max-width: 767px) {
+	.line_decor {
+		&::before,
+		&::after {
+			height: 1rem;
+		}
+		&::before {
+			top: -1rem;
+		}
+		&::after {
+			top: -1rem;
+		}
+	}
 	.about-mision__column {
 		padding: 0 0.5rem;
 		
@@ -159,7 +150,7 @@
 		}
 
 		.mision__info {
-			padding: 1.5rem 0;
+			padding: 2rem 0;
 		}
 
 		.more-link {

@@ -8,3 +8,29 @@
 	background-color: $yellow;
 	margin: 2rem 0;
 }   
+
+@mixin line(){
+	display: block;
+	position: relative;
+	width: 75%;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		height: 1.5rem;
+		right: 0;	
+	}
+	&::before {
+		width: 64%;
+		background-color: $yellow;
+		top: -1.5rem;
+		margin-right: -6%;
+	}
+	&::after {
+		content: '';
+		width: 30%;
+		top: -1.5rem;
+		margin-right: -33.3%;
+		background-color: $purple;
+	}
+}

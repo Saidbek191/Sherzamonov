@@ -1,0 +1,74 @@
+.about-me {
+	margin: 8rem 0 0 0;
+}
+
+.content {
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: flex-end;
+	
+}
+
+.person_photo {
+	// display: block;
+	max-width: 949px;
+	// width: 100%;
+	position: absolute;
+}
+.about__content {
+	// align-self: flex-end;
+	// height: 584px;
+	width: 706px;
+	position: relative;
+	left: 31%;
+	padding-top: 21.96rem;
+}
+.about__text-box {
+	
+	padding: 5rem;
+	background-color: $light;
+}
+
+
+.about-btn{
+	margin: 2rem 0 0 0;
+}
+
+@media (max-width: 767px) {
+	.about-me {
+		margin: 2rem 0 0 0;
+	}
+	.content {
+		justify-content: center;
+	}
+	
+	.person_photo {
+		display: none;
+	}
+	
+	.about__content {
+		position: static;
+		display: block;
+		width: 100%;
+		padding-top: 2rem;
+	}
+	
+	.about__text-box {
+		padding: .5rem;
+		background-color: $black;
+	}
+	
+	.full-name {
+		padding: 2rem 0 1rem 0;
+		color: $yellow;
+	}
+	.biography, 
+	.story {
+		color: $light;
+	}
+	
+	.about-btn{
+		margin: 2rem 0;
+		color: $black;
+	}
+}
