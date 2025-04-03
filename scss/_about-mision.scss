@@ -88,12 +88,9 @@
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
-	// justify-content: flex-start;
 	padding: 98px 108px 138px 0;
 }
-// .mision__sub {
-// 	line-height: 2;
-// }
+
 .mision__title {
 	font-size: 28px;
 	line-height: 1.2;
@@ -109,6 +106,8 @@
 	font-weight: 600;
 	line-height: 1.3;
 }
+
+// RESPONSIVE FOR TABLET & PHONE
 
 @media (max-width: 1131px) {
 	.about-mision {
@@ -148,6 +147,23 @@
 			padding: 2rem 0 0 0;
 		font-size: 1.2rem;
 	}
-	
 }
+}
+
+@media (max-width: 767px) {
+	.about-mision__column {
+		padding: 0 0.5rem;
+		
+		.about__info {
+			padding: 1.5rem 0;
+		}
+
+		.mision__info {
+			padding: 1.5rem 0;
+		}
+
+		.more-link {
+			padding: 1rem 0 0 0;
+		}
+	}
 }
