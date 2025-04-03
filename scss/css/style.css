@@ -501,7 +501,7 @@ header::before {
 .line_decor {
   display: block;
   position: relative;
-  width: 1061px;
+  width: 75%;
 }
 .line_decor::before, .line_decor::after {
   content: "";
@@ -510,38 +510,45 @@ header::before {
   right: 0;
 }
 .line_decor::before {
-  width: 843px;
+  width: 64%;
   background-color: #FFD050;
   top: -24px;
-  margin-left: 421.5px;
+  margin-right: -6%;
 }
 .line_decor::after {
   content: "";
-  width: 282px;
+  width: 30%;
   top: -24px;
-  margin-right: -219px;
+  margin-right: -33.3%;
   background-color: #592EA9;
 }
 
 .about-mision__body {
+  display: flex;
+  justify-content: space-between;
   background-color: #F4F0F8;
+}
+.about-mision__body .sub-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-mision__column {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 60px;
 }
 
 .about__info {
+  display: flex;
+  flex-direction: column;
   padding: 96px 0 96px 80px;
-  flex: 1 1 135%;
-  align-items: center;
+  flex: 1 1 auto;
 }
 
 .sub-title {
   font-size: 16px;
-  line-height: 1.25px;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 600;
@@ -562,6 +569,7 @@ header::before {
   font-size: 36px;
   letter-spacing: -2px;
   color: #232536;
+  padding: 0 0 16px 0;
 }
 
 .text {
@@ -574,18 +582,16 @@ header::before {
   align-content: flex-start;
 }
 
-.misin__info {
-  flex: 0 1 auto;
+.mision__info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
   padding: 98px 108px 138px 0;
 }
 
-.misin__sub {
-  line-height: 2;
-}
-
-.misin__title {
+.mision__title {
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: -1px;
 }
 
@@ -598,6 +604,42 @@ header::before {
   line-height: 1.3;
 }
 
+@media (max-width: 1131px) {
+  .about-mision {
+    margin: 80px 0 0 0;
+  }
+  .about-mision__column {
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+  .about-mision__column .about__info {
+    padding: 3rem 0;
+  }
+  .about-mision__column .sub-title {
+    font-size: 0.8rem;
+    padding: 0 0 0.7rem 0;
+  }
+  .about-mision__column .about__title {
+    padding: 0 0 0.7rem 0;
+  }
+  .about-mision__column .title {
+    font-size: 1.8rem;
+  }
+  .about-mision__column .mision__info {
+    padding: 30px 0;
+  }
+  .about-mision__column .mision__title {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    letter-spacing: -1px;
+  }
+  .about-mision__column .more-link {
+    padding: 2rem 0 0 0;
+    font-size: 1.2rem;
+  }
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;
