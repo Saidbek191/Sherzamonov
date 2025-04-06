@@ -56,7 +56,7 @@
 }
 
 .text {
-	font-family: 'Inter';
+	font-family: 'Inter' sans-serif;
 	line-height: 2;
 	color: $mediumGrey;
 }
@@ -143,7 +143,7 @@
 		}
 	}
 	.about-mision__column {
-		padding: 0 0.5rem;
+		padding: 0 2rem;
 		
 		.about__info {
 			padding: 1.5rem 0;
@@ -156,5 +156,11 @@
 		.more-link {
 			padding: 1rem 0 0 0;
 		}
+	}
+}
+
+@media (max-width: 427px) {
+	.about-mision__column {
+		padding: 2rem .5rem;
 	}
 }

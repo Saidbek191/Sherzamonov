@@ -306,6 +306,9 @@ header::before {
   background-color: #FFD050;
   margin: 2rem 0;
 }
+.home__btn:hover {
+  background-color: #EDC14A;
+}
 .home__btn a {
   text-decoration: none;
   color: #232536;
@@ -408,7 +411,9 @@ header::before {
 
 .row__right-box {
   display: flex;
+  align-items: center;
   gap: 14rem;
+  padding-right: 2rem;
 }
 
 .columns__more {
@@ -440,6 +445,9 @@ header::before {
   background-color: #FFD050;
   margin: 2rem 0;
   margin: 2rem 0 2rem 2rem;
+}
+.columns__btn:hover {
+  background-color: #EDC14A;
 }
 .columns__btn a {
   color: inherit;
@@ -581,7 +589,7 @@ header::before {
 }
 
 .text {
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   line-height: 2;
   color: #6D6E76;
 }
@@ -659,7 +667,7 @@ header::before {
     top: -1rem;
   }
   .about-mision__column {
-    padding: 0 0.5rem;
+    padding: 0 2rem;
   }
   .about-mision__column .about__info {
     padding: 1.5rem 0;
@@ -671,17 +679,23 @@ header::before {
     padding: 1rem 0 0 0;
   }
 }
+@media (max-width: 427px) {
+  .about-mision__column {
+    padding: 2rem 0.5rem;
+  }
+}
 .about-me {
   margin: 8rem 0 0 0;
 }
 
 .person_photo {
   max-width: 949px;
+  width: 100%;
   position: absolute;
 }
 
 .about__content {
-  width: 706px;
+  width: 40rem;
   position: relative;
   left: 31%;
   padding-top: 21.96rem;
@@ -696,7 +710,7 @@ header::before {
   margin: 2rem 0 0 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .about-me {
     margin: 2rem 0 0 0;
   }
@@ -713,11 +727,11 @@ header::before {
     padding-top: 2rem;
   }
   .about__text-box {
-    padding: 0.5rem;
+    padding: 2rem;
     background-color: #232536;
   }
   .full-name {
-    padding: 2rem 0 1rem 0;
+    padding: 0 0 1rem 0;
     color: #FFD050;
   }
   .biography,
@@ -725,8 +739,97 @@ header::before {
     color: #fff;
   }
   .about-btn {
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     color: #232536;
+  }
+}
+@media (max-width: 426px) {
+  .about__text-box {
+    padding: 2rem 0.5rem;
+  }
+}
+.footer {
+  background-color: #232536;
+}
+
+.footer__body {
+  padding: 3.2rem 0;
+  font-family: "Inter";
+}
+
+.footer__donation {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 7rem 0;
+  background-color: #4C4C4C;
+}
+
+.donation__text {
+  font-family: "Sen";
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #fff;
+  padding: 5rem 4rem;
+}
+
+.donation__input, input {
+  max-width: 323px;
+  width: 100%;
+  border: 2px solid #6D6E76;
+  padding: 0.8rem 10rem 0.8rem 1.5rem;
+  background-color: transparent;
+  outline: none;
+}
+.donation__input::placeholder, input::placeholder {
+  color: #6D6E76;
+}
+
+.donation {
+  margin: 0 4rem 0 0;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+.address__footer {
+  font-family: "Inter";
+  color: #6D6E76;
+  line-height: 1.5;
+}
+
+.social__footer {
+  display: flex;
+  gap: 26px;
+}
+
+@media (max-width: 1023px) {
+  .footer__donation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0 2rem 0;
+  }
+  .donation__text {
+    padding: 3rem 2rem;
+  }
+  .donation {
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  .footer__contacts {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
 }
 .container {

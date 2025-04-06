@@ -72,7 +72,9 @@
 
 .row__right-box {
 	display: flex;
+	align-items: center;
 	gap: 14rem;
+	padding-right: 2rem;
 }
 
 .columns__more {
@@ -102,7 +104,9 @@
 .columns__btn {
 	@include button();
 	margin: 2rem 0 2rem 2rem;
-
+	&:hover {
+		background-color: #EDC14A;
+	}
 	a {
 		color: inherit;
 	}

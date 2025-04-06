@@ -12,13 +12,13 @@
 .person_photo {
 	// display: block;
 	max-width: 949px;
-	// width: 100%;
+	width: 100%;
 	position: absolute;
 }
 .about__content {
 	// align-self: flex-end;
 	// height: 584px;
-	width: 706px;
+	width: 40rem;
 	position: relative;
 	left: 31%;
 	padding-top: 21.96rem;
@@ -34,7 +34,7 @@
 	margin: 2rem 0 0 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
 	.about-me {
 		margin: 2rem 0 0 0;
 	}
@@ -54,12 +54,12 @@
 	}
 	
 	.about__text-box {
-		padding: .5rem;
+		padding: 2rem;
 		background-color: $black;
 	}
 	
 	.full-name {
-		padding: 2rem 0 1rem 0;
+		padding: 0 0 1rem 0;
 		color: $yellow;
 	}
 	.biography, 
@@ -68,7 +68,13 @@
 	}
 	
 	.about-btn{
-		margin: 2rem 0;
+		margin: 2rem 0 0 0;
 		color: $black;
+	}
+}
+
+@media (max-width: 426px) {
+	.about__text-box {
+		padding: 2rem .5rem;
 	}
 }
