@@ -841,6 +841,53 @@ body {
   flex: 1 1 auto;
 }
 
+.blog__header {
+  background-color: #F4F0F8;
+  padding: 80px 0;
+}
+
+.blog__header-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+
+.blog-info {
+  color: #232536;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 16px;
+}
+
+.blog-sub {
+  font-family: "Inter";
+  padding: 0;
+}
+
+.blog-title {
+  font-size: 36px;
+  line-height: 1.4;
+  letter-spacing: -2px;
+  color: #232536;
+}
+
+.blog-date {
+  padding: 0;
+}
+
+.blog-date span {
+  color: #592EA9;
+}
+
+.blog__img img {
+  max-width: 515px;
+  width: 100%;
+  flex: 1 1 50%;
+  padding: 160px 0 0 0;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;

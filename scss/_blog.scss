@@ -7,3 +7,54 @@ body {
 .wrapper {
 	flex: 1 1 auto;
 }
+
+.blog__header {
+	background-color: $lavender;	
+	padding: 80px 0;
+}
+
+
+.blog__header-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8rem;
+}
+.blog-info {
+	color: $black;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	gap: 16px;
+	// margin: 94px 0;
+}
+
+.blog-sub {
+	font-family: $fontFamily;
+	padding: 0;
+}
+
+.blog-title {
+	font-size: 36px;
+	line-height: 1.4;
+	letter-spacing: -2px;
+	color: $black;
+}
+.blog-date {
+	padding: 0;
+}
+.blog-date span {
+	color: $purple;
+}
+
+.blog-text {
+
+}
+
+
+.blog__img img {
+	max-width: 515px;
+	width: 100%;
+	flex: 1 1 50%;
+	padding: 160px 0 0 0;
+}
