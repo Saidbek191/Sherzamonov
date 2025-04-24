@@ -1,82 +1,10 @@
 /*  IIMPOR__SCSS__FILES  */
-/* RESETS */
-@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Sen:700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input ::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button ::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a :hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-/* ================================== */
-/* IMPORT__FONTS */
-/* ==================================================== */
 /* VARIABELS */
 /* =============================== */
 /* FONTS */
 /* ================================ */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sen:700&display=swap");
 header {
   background-color: #232536;
   font-family: "Inter";
@@ -240,6 +168,78 @@ header::before {
   }
 }
 /* ========================================= */
+/* RESETS */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input ::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* ================================== */
+/* IMPORT__FONTS */
+/* ==================================================== */
 .home {
   font-family: "Inter";
   background: url("/images/home/bg.jpg");
@@ -877,6 +877,12 @@ body {
   padding: 0;
 }
 
+.blog-date {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
 .blog-date span {
   color: #592EA9;
 }
@@ -985,7 +991,37 @@ body {
   color: #232536;
 }
 
+@media (max-width: 1288px) {
+  .blog__header-body {
+    margin-inline: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .blog__header-body {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4px;
+    padding: 40px 0 0 0;
+  }
+  .cards__title,
+  .cards__sub,
+  .cards__text {
+    margin-inline: 20px;
+    text-align: left;
+  }
+  .cards__title {
+    font-size: 2rem;
+  }
+  .cards__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
