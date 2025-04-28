@@ -1,4 +1,4 @@
-@use './base/variables' as v;
+@use '../base/variables' as v;
 
 .about-me {
 	margin: 8rem 0 0 0;
@@ -32,6 +32,7 @@
 	padding: 5rem;
 	background-color: v.$light;
 }
+
 
 
 .about-btn {

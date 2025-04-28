@@ -7,6 +7,7 @@
 /* FONTS */
 /* ================================ */
 /*  IIMPOR__SCSS__FILES  */
+/*  IIMPOR__SCSS__FILES  */
 header {
   background-color: #232536;
   font-family: "Inter";
@@ -242,7 +243,6 @@ img {
 /* IMPORT__FONTS */
 /* ==================================================== */
 /*  IIMPOR__SCSS__FILES  */
-/*  IIMPOR__SCSS__FILES  */
 .home {
   font-family: "Inter";
   background: url("/images/home/bg.jpg");
@@ -301,6 +301,8 @@ img {
   margin: 3rem 0 0 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  color: #232536;
   display: inline-block;
   font-size: 1.3rem;
   font-family: "Sen";
@@ -310,7 +312,7 @@ img {
   margin: 2rem 0;
 }
 .home__btn:hover {
-  background-color: #FFD050;
+  background-color: #EDC14A;
 }
 .home__btn a {
   text-decoration: none;
@@ -400,6 +402,7 @@ img {
 
 .columns__btn {
   margin: 0 0 0 20px;
+  color: #232536;
 }
 
 .columns__right {
@@ -449,9 +452,10 @@ img {
   background-color: #FFD050;
   margin: 2rem 0;
   margin: 2rem 0 2rem 2rem;
+  cursor: pointer;
 }
 .columns__btn:hover {
-  background-color: #FFD050;
+  background-color: #EDC14A;
 }
 .columns__btn a {
   color: inherit;
@@ -805,6 +809,7 @@ input::placeholder {
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
+  cursor: pointer;
 }
 
 .address__footer {

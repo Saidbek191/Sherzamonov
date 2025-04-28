@@ -1,16 +1,16 @@
 /*  IIMPOR__SCSS__FILES  */
 
 @use './base/variables' as v;
-@use './header';
-@use './reset';
 @use './modules/mixins' as m;
-@use './home';
-@use './featured-post';
-@use './about-mision';
-@use './about-me';
-@use './footer';
-@use './blog';
-@use './blog-post';
+@use './components/header';
+@use './null/reset';
+@use './components/home';
+@use './components/featured-post';
+@use './components/about-mision';
+@use './components/about-me';
+@use './components/footer';
+@use './components/blog';
+@use './components/blog-post';
 
 // container 1440px
 .container {

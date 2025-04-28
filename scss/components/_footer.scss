@@ -1,4 +1,4 @@
-@use './base/variables' as v;
+@use '../base/variables' as v;
 
 .footer {
 	background-color: v.$black;
@@ -55,6 +55,7 @@ input {
 	justify-content: space-between;
 	align-items: center;
 	padding-inline: 10px;
+	cursor: pointer;
 }
 
 .address__footer {
