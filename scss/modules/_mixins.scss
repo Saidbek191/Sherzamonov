@@ -1,36 +1,40 @@
+@use '../base/variables' as v;
 
 @mixin button() {
-	display: inline-block;	
+	display: inline-block;
 	font-size: 1.3rem;
-	font-family: 'Sen';
+	font-family: v.$secondFont;
 	font-weight: 700;
 	padding: 1rem 3rem;
-	background-color: $yellow;
+	background-color: v.$yellow;
 	margin: 2rem 0;
-}   
+}
 
-@mixin line(){
+@mixin line() {
 	display: block;
 	position: relative;
 	width: 75%;
+
 	&::before,
 	&::after {
 		content: '';
 		position: absolute;
 		height: 1.5rem;
-		right: 0;	
+		right: 0;
 	}
+
 	&::before {
 		width: 64%;
-		background-color: $yellow;
+		background-color: v.$yellow;
 		top: -1.5rem;
 		margin-right: -6%;
 	}
+
 	&::after {
 		content: '';
 		width: 30%;
 		top: -1.5rem;
 		margin-right: -33.3%;
-		background-color: $purple;
+		background-color: v.$purple;
 	}
 }

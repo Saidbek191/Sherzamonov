@@ -1,7 +1,8 @@
-
+@use './base/variables' as v;
+@use './modules/mixins' as m;
 
 .home {
-	font-family: "Inter";
+	font-family: v.$fontFamily;
 	background: url('/images/home/bg.jpg');
 	background-color: rgba(0, 0, 0, 0.5);
 	background-blend-mode: overlay;
@@ -18,7 +19,7 @@
 	align-items: flex-start;
 	gap: 8px;
 	padding: 13rem 0 0 2rem;
-	color: $light;
+	color: v.$light;
 }
 
 .home__sub {
@@ -35,7 +36,7 @@
 }
 
 .home__title {
-	font-family: 'Sen';
+	font-family: v.$secondFont;
 	font-size: 3.5rem;
 	line-height: 1.2;
 	letter-spacing: -2px;
@@ -47,7 +48,7 @@
 	line-height: 1.8;
 
 	span {
-		color: $yellow;
+		color: v.$yellow;
 	}
 }
 
@@ -61,13 +62,15 @@
 	margin: 3rem 0 0 0;
 	display: flex;
 	align-items: center;
-	@include button();
+	@include m.button();
+
 	&:hover {
-		background-color: #EDC14A;
+		background-color: v.$yellow;
 	}
+
 	a {
 		text-decoration: none;
-		color: $black;
+		color: v.$black;
 	}
 }
 

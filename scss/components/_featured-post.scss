@@ -1,5 +1,8 @@
+@use './base/variables' as v;
+@use './modules/mixins' as m;
+
 .featured-post {
-	font-family: "Sen";
+	font-family: v.$secondFont;
 	margin: 128px 0 0 0;
 }
 
@@ -17,7 +20,7 @@
 }
 
 .columns__left {
-	border: $mediumGrey 1px solid;
+	border: v.$mediumGrey 1px solid;
 	margin: 3rem 0 0 0;
 	flex: 1 1 auto;
 }
@@ -28,7 +31,7 @@
 }
 
 .columns__date {
-	font-family: 'Inter';
+	font-family: v.$fontFamily;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 2.8px;
@@ -36,7 +39,7 @@
 }
 
 .name {
-	color: $purple;
+	color: v.$purple;
 }
 
 .columns__subtitle {
@@ -47,11 +50,11 @@
 }
 
 .columns__text {
-	font-family: 'Inter';
+	font-family: v.$fontFamily;
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 20px;
-	color: $mediumGrey;
+	color: v.$mediumGrey;
 	padding: 0 0 0 2.2rem;
 }
 
@@ -79,7 +82,7 @@
 
 .columns__more {
 	text-decoration: none;
-	font-family: 'Inter';
+	font-family: v.$fontFamily;
 	font-size: 16px;
 	line-height: 4.48px;
 }
@@ -96,17 +99,19 @@
 
 	&:hover {
 		cursor: pointer;
-		background-color: $lightYellow;
+		background-color: v.$lightYellow;
 		transition: all .3ms ease 0s;
 	}
 }
 
 .columns__btn {
-	@include button();
+	@include m.button();
 	margin: 2rem 0 2rem 2rem;
+
 	&:hover {
-		background-color: #EDC14A;
+		background-color: v.$yellow;
 	}
+
 	a {
 		color: inherit;
 	}
@@ -145,7 +150,7 @@
 @media (max-width: 767px) {
 	.row__title-box {
 		padding: 0;
-		
+
 		.title {
 			padding: 0 0 0 .5rem;
 		}
