@@ -1019,6 +1019,24 @@ body {
     text-align: left;
   }
 }
+.blog-post {
+  margin: 128px 0;
+}
+
+.blog-post__img {
+  width: 100%;
+}
+
+.blog-post__body {
+  width: 844px;
+  margin: 0 auto;
+}
+
+.blog-post__title {
+  padding: 48px 0 0 0;
+  letter-spacing: -2px;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
