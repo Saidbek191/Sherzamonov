@@ -19,35 +19,54 @@
 	letter-spacing: -2px;
 }
 
-.title {}
+.title {
+	padding-bottom: 16px;
+}
 
 .blog-post__text {}
 
 .text {}
 
 .blog-post__list {
-	list-style: disc;
+	padding: 24px 0 24px 20px;
 
 	.post-list {
+		list-style: inherit;
 		color: v.$darkGrey;
 		font-size: 24px;
-		line-height: .5;
+		line-height: 1.5;
 		font-family: v.$secondFont;
 	}
 
 }
 
 .what-next {
+	.what-next__title {
+		margin: 128px 0 64px 0;
+	}
+
 	.what-next__body-row {
-		.what-next__column {}
+		display: flex;
+		gap: 32px;
+
+		.what-next__column {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+		}
 
 		.next__img {}
 
-		.next__date {}
+		.next__date {
+			font-family: v.$fontFamily;
+		}
 
 		.date {}
 
-		.next__title {}
+		.next__title {
+			padding: 16px 0;
+			// width: 405px;
+		}
 
 		.title {}
 

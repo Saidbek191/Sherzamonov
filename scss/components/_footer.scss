@@ -67,7 +67,28 @@ input {
 .social__footer {
 	display: flex;
 	gap: 26px;
+
+	.social__icon {
+		display: inline-block;
+
+		svg {
+			transition: fill 0.3s;
+
+			path {
+				fill: v.$mediumGrey;
+				transition: fill 0.3s;
+			}
+		}
+
+		&:hover {
+			svg path {
+				fill: v.$yellow;
+			}
+		}
+	}
 }
+
+
 
 @media (max-width: 1023px) {
 	.footer__donation {
