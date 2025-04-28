@@ -1,10 +1,13 @@
 /*  IIMPOR__SCSS__FILES  */
+/* RESETS */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sen:700&display=swap");
 /* VARIABELS */
 /* =============================== */
 /* FONTS */
 /* ================================ */
-@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Sen:700&display=swap");
+/*  IIMPOR__SCSS__FILES  */
+/*  IIMPOR__SCSS__FILES  */
 header {
   background-color: #232536;
   font-family: "Inter";
@@ -168,7 +171,6 @@ header::before {
   }
 }
 /* ========================================= */
-/* RESETS */
 * {
   padding: 0;
   margin: 0;
@@ -240,6 +242,7 @@ img {
 /* ================================== */
 /* IMPORT__FONTS */
 /* ==================================================== */
+/*  IIMPOR__SCSS__FILES  */
 .home {
   font-family: "Inter";
   background: url("/images/home/bg.jpg");
@@ -298,6 +301,8 @@ img {
   margin: 3rem 0 0 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  color: #232536;
   display: inline-block;
   font-size: 1.3rem;
   font-family: "Sen";
@@ -337,6 +342,7 @@ img {
     font-size: 0.8rem;
   }
 }
+/*  IIMPOR__SCSS__FILES  */
 .featured-post {
   font-family: "Sen";
   margin: 128px 0 0 0;
@@ -396,6 +402,7 @@ img {
 
 .columns__btn {
   margin: 0 0 0 20px;
+  color: #232536;
 }
 
 .columns__right {
@@ -445,6 +452,7 @@ img {
   background-color: #FFD050;
   margin: 2rem 0;
   margin: 2rem 0 2rem 2rem;
+  cursor: pointer;
 }
 .columns__btn:hover {
   background-color: #EDC14A;
@@ -508,6 +516,7 @@ img {
     margin: 1rem 0 1rem 0.5rem;
   }
 }
+/*  IIMPOR__SCSS__FILES  */
 .about-mision {
   top: 0;
   left: 0;
@@ -589,7 +598,7 @@ img {
 }
 
 .text {
-  font-family: "Inter" sans-serif;
+  font-family: "Inter";
   line-height: 2;
   color: #6D6E76;
 }
@@ -684,6 +693,7 @@ img {
     padding: 2rem 0.5rem;
   }
 }
+/*  IIMPOR__SCSS__FILES  */
 .about-me {
   margin: 8rem 0 0 0;
 }
@@ -748,6 +758,7 @@ img {
     padding: 2rem 0.5rem;
   }
 }
+/*  IIMPOR__SCSS__FILES  */
 .footer {
   background-color: #232536;
 }
@@ -775,7 +786,8 @@ img {
   padding: 5rem 4rem;
 }
 
-.donation__input, input {
+.donation__input,
+input {
   max-width: 323px;
   width: 100%;
   border: 2px solid #6D6E76;
@@ -783,7 +795,8 @@ img {
   background-color: transparent;
   outline: none;
 }
-.donation__input::placeholder, input::placeholder {
+.donation__input::placeholder,
+input::placeholder {
   color: #6D6E76;
 }
 
@@ -796,6 +809,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
+  cursor: pointer;
 }
 
 .address__footer {
@@ -807,6 +821,19 @@ img {
 .social__footer {
   display: flex;
   gap: 26px;
+}
+.social__footer .social__icon {
+  display: inline-block;
+}
+.social__footer .social__icon svg {
+  transition: fill 0.3s;
+}
+.social__footer .social__icon svg path {
+  fill: #6D6E76;
+  transition: fill 0.3s;
+}
+.social__footer .social__icon:hover svg path {
+  fill: #FFD050;
 }
 
 @media (max-width: 1023px) {
@@ -832,6 +859,7 @@ img {
     gap: 20px;
   }
 }
+/*  IIMPOR__SCSS__FILES  */
 body {
   display: flex;
   flex-direction: column;
@@ -908,7 +936,6 @@ body {
   height: 2px;
   border-bottom: 2px solid #F4F4F4;
   padding: 32px 0 0 0;
-  opacity: 1.5px;
   display: block;
 }
 
@@ -1019,6 +1046,7 @@ body {
     text-align: left;
   }
 }
+/*  IIMPOR__SCSS__FILES  */
 .blog-post {
   margin: 128px 0;
 }
@@ -1037,6 +1065,39 @@ body {
   letter-spacing: -2px;
 }
 
+.title {
+  padding-bottom: 16px;
+}
+
+.blog-post__list {
+  padding: 24px 0 24px 20px;
+}
+.blog-post__list .post-list {
+  list-style: inherit;
+  color: #4C4C4C;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: "Sen";
+}
+
+.what-next .what-next__title {
+  margin: 128px 0 64px 0;
+}
+.what-next .what-next__body-row {
+  display: flex;
+  gap: 32px;
+}
+.what-next .what-next__body-row .what-next__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.what-next .what-next__body-row .next__date {
+  font-family: "Inter";
+}
+.what-next .what-next__body-row .next__title {
+  padding: 16px 0;
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;

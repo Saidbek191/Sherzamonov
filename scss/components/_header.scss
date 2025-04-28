@@ -1,9 +1,11 @@
+@use '../base/variables' as v;
+
 header {
-	background-color: $black;
-	font-family: $fontFamily;
+	background-color: v.$black;
+	font-family: v.$fontFamily;
 
 	a {
-		color: $light;
+		color: v.$light;
 		text-decoration: none;
 	}
 }
@@ -23,7 +25,7 @@ header {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: $black;
+		background-color: v.$black;
 		z-index: 2;
 	}
 }
@@ -55,7 +57,7 @@ header {
 		}
 
 		.head__link:hover {
-			border-bottom: 2px solid $yellow;
+			border-bottom: 2px solid v.$yellow;
 		}
 	}
 }
@@ -68,7 +70,7 @@ header {
 	z-index: 3;
 
 	span {
-		color: $yellow;
+		color: v.$yellow;
 	}
 }
 
@@ -99,7 +101,7 @@ header {
 
 		span {
 			position: absolute;
-			background-color: $light;
+			background-color: v.$light;
 			left: 0;
 			width: 100%;
 			height: 2px;
@@ -110,7 +112,7 @@ header {
 		&:before,
 		&::after {
 			content: '';
-			background-color: $light;
+			background-color: v.$light;
 			position: absolute;
 			width: 100%;
 			height: 2px;
@@ -149,7 +151,7 @@ header {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: $black;
+		background-color: v.$black;
 		padding: 80px 0 0 0;
 		justify-content: center;
 		font-size: 2rem;
@@ -166,7 +168,7 @@ header {
 			}
 
 			a {
-				color: $lightYellow;
+				color: v.$lightYellow;
 			}
 		}
 

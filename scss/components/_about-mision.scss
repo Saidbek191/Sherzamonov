@@ -1,3 +1,5 @@
+@use '../base/variables' as v;
+@use '../modules/mixins' as m;
 
 .about-mision {
 	top: 0;
@@ -6,25 +8,27 @@
 }
 
 .line_decor {
-	@include line();
+	@include m.line();
 }
 
 .about-mision__body {
 	display: flex;
 	justify-content: space-between;
-	background-color: $lavender;
+	background-color: v.$lavender;
 
 	&.sub-title {
 		display: flex;
 		justify-content: space-between;
 	}
 }
+
 .about-mision__column {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 60px;
 }
+
 .about__info {
 	display: flex;
 	flex-direction: column;
@@ -37,32 +41,36 @@
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-family: 'Inter';
+	font-family: v.$fontFamily;
 	padding: 0 0 24px 0;
-	color: $black;
+	color: v.$black;
 }
+
 .about__title {
 	display: block;
 	padding: 0 0 26px 0;
 }
+
 .title {
 	display: block;
-	font-family: 'Sen';
+	font-family: v.$secondFont;
 	line-height: 1.2;
 	font-size: 36px;
 	letter-spacing: -2px;
-	color: $black;
+	color: v.$black;
 	padding: 0 0 16px 0;
 }
 
 .text {
-	font-family: 'Inter' sans-serif;
+	font-family: v.$fontFamily;
 	line-height: 2;
-	color: $mediumGrey;
+	color: v.$mediumGrey;
 }
+
 .columns__more {
 	align-content: flex-start;
 }
+
 .mision__info {
 	display: flex;
 	flex-direction: column;
@@ -79,7 +87,7 @@
 
 .more-link {
 	display: block;
-	font-family: 'Sen';
+	font-family: v.$secondFont;
 	padding: 40px 0 0 0;
 	font-size: 18px;
 	font-weight: 600;
@@ -98,53 +106,61 @@
 		padding: 0 2rem;
 		gap: 0;
 		flex-direction: column-reverse;
-		
+
 		.about__info {
 			padding: 3rem 0;
 		}
-		
+
 		.sub-title {
 			font-size: .8rem;
 			padding: 0 0 .7rem 0;
 		}
+
 		.about__title {
 			padding: 0 0 .7rem 0;
 		}
+
 		.title {
 			font-size: 1.8rem;
 		}
-		
+
 		.mision__info {
 			padding: 30px 0;
 		}
+
 		.mision__title {
 			font-size: 1.8rem;
 			line-height: 1.4;
 			letter-spacing: -1px;
 		}
+
 		.more-link {
 			padding: 2rem 0 0 0;
-		font-size: 1.2rem;
+			font-size: 1.2rem;
+		}
 	}
-}
 }
 
 @media (max-width: 767px) {
 	.line_decor {
+
 		&::before,
 		&::after {
 			height: 1rem;
 		}
+
 		&::before {
 			top: -1rem;
 		}
+
 		&::after {
 			top: -1rem;
 		}
 	}
+
 	.about-mision__column {
 		padding: 0 2rem;
-		
+
 		.about__info {
 			padding: 1.5rem 0;
 		}

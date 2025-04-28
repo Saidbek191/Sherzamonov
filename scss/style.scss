@@ -1,19 +1,19 @@
 /*  IIMPOR__SCSS__FILES  */
 
-@import './variables';
-@import './header';
-@import './reset';
-@import './mixins';
-@import './home';
-@import './featured-post';
-@import './about-mision';
-@import './about-me';
-@import './footer';
-@import './blog';
-@import './blog-post';
+@use './base/variables' as v;
+@use './modules/mixins' as m;
+@use './components/header';
+@use './null/reset';
+@use './components/home';
+@use './components/featured-post';
+@use './components/about-mision';
+@use './components/about-me';
+@use './components/footer';
+@use './components/blog';
+@use './components/blog-post';
 
 // container 1440px
 .container {
-	max-width: $maxWidthContainer;
+	max-width: v.$maxWidthContainer;
 	margin: 0 auto
 }

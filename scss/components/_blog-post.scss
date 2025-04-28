@@ -1,0 +1,78 @@
+@use '../base/variables' as v;
+
+.blog-post {
+	margin: 128px 0;
+}
+
+.blog-post__img {
+	width: 100%;
+}
+
+
+.blog-post__body {
+	width: 844px;
+	margin: 0 auto;
+}
+
+.blog-post__title {
+	padding: 48px 0 0 0;
+	letter-spacing: -2px;
+}
+
+.title {
+	padding-bottom: 16px;
+}
+
+.blog-post__text {}
+
+.text {}
+
+.blog-post__list {
+	padding: 24px 0 24px 20px;
+
+	.post-list {
+		list-style: inherit;
+		color: v.$darkGrey;
+		font-size: 24px;
+		line-height: 1.5;
+		font-family: v.$secondFont;
+	}
+
+}
+
+.what-next {
+	.what-next__title {
+		margin: 128px 0 64px 0;
+	}
+
+	.what-next__body-row {
+		display: flex;
+		gap: 32px;
+
+		.what-next__column {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+		}
+
+		.next__img {}
+
+		.next__date {
+			font-family: v.$fontFamily;
+		}
+
+		.date {}
+
+		.next__title {
+			padding: 16px 0;
+			// width: 405px;
+		}
+
+		.title {}
+
+		.next__text {}
+
+		.text {}
+	}
+
+}

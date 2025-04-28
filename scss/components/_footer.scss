@@ -1,10 +1,12 @@
+@use '../base/variables' as v;
+
 .footer {
-	background-color: $black;
+	background-color: v.$black;
 }
 
 .footer__body {
 	padding: 3.2rem 0;
-	font-family: $fontFamily;
+	font-family: v.$fontFamily;
 }
 
 
@@ -14,49 +16,79 @@
 	align-items: center;
 	gap: 24px;
 	margin: 7rem 0;
-	background-color: $darkGrey;
+	background-color: v.$darkGrey;
 }
+
 .donation__text {
-	font-family: $secondFont;
+	font-family: v.$secondFont;
 	font-size: 2.25rem;
 	line-height: 1.2;
 	font-weight: 700;
 	letter-spacing: -2px;
-	color: $light;
+	color: v.$light;
 	padding: 5rem 4rem;
 }
-.donation__input,input{
+
+.donation__input,
+input {
 	max-width: 323px;
 	width: 100%;
 	// margin: 0 .5rem;
-	border: 2px solid $mediumGrey;
+	border: 2px solid v.$mediumGrey;
 	padding: .8rem 10rem .8rem 1.5rem;
 	background-color: transparent;
 	outline: none;
+
 	&::placeholder {
-		color: $mediumGrey;
+		color: v.$mediumGrey;
 	}
 }
+
 .donation {
 	margin: 0 4rem 0 0;
 }
-.btn-yellow {
-}
+
+.btn-yellow {}
+
 .footer__contacts {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-inline: 10px;
+	cursor: pointer;
 }
+
 .address__footer {
-	font-family: $fontFamily;
-	color: $mediumGrey;
+	font-family: v.$fontFamily;
+	color: v.$mediumGrey;
 	line-height: 1.5;
 }
+
 .social__footer {
 	display: flex;
 	gap: 26px;
+
+	.social__icon {
+		display: inline-block;
+
+		svg {
+			transition: fill 0.3s;
+
+			path {
+				fill: v.$mediumGrey;
+				transition: fill 0.3s;
+			}
+		}
+
+		&:hover {
+			svg path {
+				fill: v.$yellow;
+			}
+		}
+	}
 }
+
+
 
 @media (max-width: 1023px) {
 	.footer__donation {
@@ -68,7 +100,7 @@
 		padding: 0 0 2rem 0;
 	}
 
-	.donation__text{
+	.donation__text {
 		padding: 3rem 2rem;
 	}
 
