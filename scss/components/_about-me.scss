@@ -33,11 +33,54 @@
 	background-color: v.$light;
 }
 
-
-
 .about-btn {
 	margin: 2rem 0 0 0;
 }
+
+.more-about-me {
+	.about-me__body {
+
+		.about-me__row {
+			.about-me__item-info {
+				.about-me__item-title {}
+
+				.title {}
+
+				.about-me__subtitle {}
+
+				.subtitle {}
+
+				.about-me__text {}
+
+				.text {}
+			}
+
+			.about-me__img {}
+		}
+	}
+
+	.second-block {
+		.second-block__row {
+			.about-me__img {}
+
+			.second-block__item-info {
+				.block__title {}
+
+				.title {}
+
+				.block__subtitle {}
+
+				.subtitle {}
+
+				.block__text {}
+
+				.text {}
+			}
+		}
+	}
+}
+
+// For tablet & phone
 
 @media (max-width: 769px) {
 	.about-me {
