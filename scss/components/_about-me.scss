@@ -1,8 +1,8 @@
 @use '../base/variables' as v;
 
-* {
-	outline: 4px solid green !important;
-}
+// * {
+// 	outline: 4px solid green !important;
+// }
 
 .about-me {
 	margin: 8rem 0 0 0;
@@ -54,6 +54,7 @@
 
 .about-me__row {
 	display: flex;
+
 	justify-content: space-between;
 	align-items: center;
 	gap: 5rem;
@@ -66,7 +67,10 @@
 }
 
 .about-me__item-info {
+	display: flex;
+	flex-direction: column;
 	text-align: left;
+	flex: 0 0 50%;
 }
 
 .about-me__item-title {}
@@ -80,9 +84,15 @@
 
 .text {}
 
-.about-me__img {
+.about-me__img,
+img {
 	width: 100%;
-	max-width: 620px;
+	// max-width: 620px;
+}
+
+.about-me__img-second,
+img {
+	width: 100%;
 }
 
 .subtitle {
@@ -118,7 +128,11 @@
 	width: 100%;
 }
 
-.second-block__item-info {}
+.second-block__item-info {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 50%;
+}
 
 .block__title {}
 
@@ -147,7 +161,7 @@
 	padding: 4rem;
 	background-color: v.$light;
 	top: 5rem;
-	right: -10%;
+	right: -8%;
 	position: relative;
 
 	@media (max-width: 1024px) {
