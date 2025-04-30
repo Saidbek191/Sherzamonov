@@ -10,7 +10,7 @@
 /*  IIMPOR__SCSS__FILES  */
 header {
   background-color: #232536;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 header a {
   color: #fff;
@@ -244,7 +244,7 @@ img {
 /* ==================================================== */
 /*  IIMPOR__SCSS__FILES  */
 .home {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   background: url("/images/home/bg.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
@@ -276,7 +276,7 @@ img {
 }
 
 .home__title {
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   font-size: 3.5rem;
   line-height: 1.2;
   letter-spacing: -2px;
@@ -305,7 +305,7 @@ img {
   color: #232536;
   display: inline-block;
   font-size: 1.3rem;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   font-weight: 700;
   padding: 1rem 3rem;
   background-color: #FFD050;
@@ -344,7 +344,7 @@ img {
 }
 /*  IIMPOR__SCSS__FILES  */
 .featured-post {
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   margin: 128px 0 0 0;
 }
 
@@ -373,7 +373,7 @@ img {
 }
 
 .columns__date {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 2.8px;
@@ -392,7 +392,7 @@ img {
 }
 
 .columns__text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
@@ -425,7 +425,7 @@ img {
 
 .columns__more {
   text-decoration: none;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 4.48px;
 }
@@ -446,7 +446,7 @@ img {
 .columns__btn {
   display: inline-block;
   font-size: 1.3rem;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   font-weight: 700;
   padding: 1rem 3rem;
   background-color: #FFD050;
@@ -577,7 +577,7 @@ img {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   padding: 0 0 24px 0;
   color: #232536;
 }
@@ -589,7 +589,7 @@ img {
 
 .title {
   display: block;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   line-height: 1.2;
   font-size: 36px;
   letter-spacing: -2px;
@@ -598,7 +598,7 @@ img {
 }
 
 .text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   line-height: 2;
   color: #6D6E76;
 }
@@ -622,7 +622,7 @@ img {
 
 .more-link {
   display: block;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   padding: 40px 0 0 0;
   font-size: 18px;
   font-weight: 600;
@@ -694,10 +694,6 @@ img {
   }
 }
 /*  IIMPOR__SCSS__FILES  */
-* {
-  outline: 4px solid green !important;
-}
-
 .about-me {
   margin: 8rem 0 0 0;
 }
@@ -749,16 +745,24 @@ img {
 }
 
 .about-me__item-info {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  flex: 0 0 50%;
 }
 
-.about-me__img {
+.about-me__img,
+img {
   width: 100%;
-  max-width: 620px;
+}
+
+.about-me__img-second,
+img {
+  width: 100%;
 }
 
 .subtitle {
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.3;
@@ -792,6 +796,12 @@ img {
   width: 100%;
 }
 
+.second-block__item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+
 .team__row {
   display: flex;
   align-items: center;
@@ -805,7 +815,7 @@ img {
   padding: 4rem;
   background-color: #fff;
   top: 5rem;
-  right: -10%;
+  right: -8%;
   position: relative;
 }
 @media (max-width: 1024px) {
@@ -933,7 +943,7 @@ img {
 
 .footer__body {
   padding: 3.2rem 0;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 
 .footer__donation {
@@ -945,7 +955,7 @@ img {
 }
 
 .donation__text {
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   font-size: 2.25rem;
   line-height: 1.2;
   font-weight: 700;
@@ -981,7 +991,7 @@ input::placeholder {
 }
 
 .address__footer {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: #6D6E76;
   line-height: 1.5;
 }
@@ -1058,7 +1068,7 @@ body {
 }
 
 .blog-sub {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   padding: 0;
 }
 
@@ -1074,7 +1084,7 @@ body {
 }
 
 .blog-date {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -1084,7 +1094,7 @@ body {
 }
 
 .blog-text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: #6D6E76;
 }
 
@@ -1132,7 +1142,7 @@ body {
 
 .subtitle-card {
   color: #592EA9;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1143,7 +1153,7 @@ body {
 
 .title-card {
   color: #232536;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   line-height: 1.3;
   letter-spacing: -2px;
   font-size: 36px;
@@ -1153,7 +1163,7 @@ body {
 
 .cards__text {
   color: #6D6E76;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -1168,7 +1178,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   cursor: pointer;
 }
 .corusel .pre {
@@ -1245,7 +1255,7 @@ body {
   color: #4C4C4C;
   font-size: 24px;
   line-height: 1.5;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
 }
 
 .what-next .what-next__title {
@@ -1261,7 +1271,7 @@ body {
   gap: 32px;
 }
 .what-next .what-next__body-row .next__date {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 .what-next .what-next__body-row .next__title {
   padding: 16px 0;
