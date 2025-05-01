@@ -22,7 +22,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 5;
 }
 header::before {
   content: "";
@@ -39,11 +39,12 @@ header::before {
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 120px;
   align-items: center;
 }
 .head .head__nav {
   display: flex;
+  align-items: center;
 }
 .head .head__list {
   display: flex;
@@ -75,6 +76,22 @@ header::before {
 
 .head__menu {
   display: none;
+}
+
+.language-switcher {
+  border: 1px solid wheat;
+  background-color: azure;
+  position: relative;
+  top: 36px;
+  right: 42%;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .language-switcher {
+    position: absolute;
+    top: 16px;
+    right: 10%;
+  }
 }
 
 /* RESPONSIVE FOR TABLET & PHONE */
