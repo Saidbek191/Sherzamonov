@@ -34,7 +34,7 @@ header {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	height: 120px;
+	height: 100px;
 	align-items: center;
 
 	.head__nav {
@@ -80,17 +80,31 @@ header {
 }
 
 .language-switcher {
-	border: 1px solid wheat;
-	background-color: azure;
 	position: relative;
-	top: 36px;
-	right: 42%;
+	top: 50px;
+	right: -48%;
 	z-index: 10;
+	// display: flex;
+	gap: 6px;
 
+	button {
+		background-color: v.$yellow;
+		color: v.$black;
+		border: none;
+		padding: 12px 8px;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+		transition: all .3s ease 0ms;
+		font-weight: 600;
+
+		&:hover {
+			background-color: v.$black;
+			color: v.$yellow;
+		}
+	}
 
 	@media (max-width: 768px) {
 		position: absolute;
-		top: 16px;
+		top: 36px;
 		right: 10%;
 	}
 }
