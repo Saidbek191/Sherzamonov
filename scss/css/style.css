@@ -39,7 +39,7 @@ header::before {
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 120px;
+  height: 100px;
   align-items: center;
 }
 .head .head__nav {
@@ -79,17 +79,29 @@ header::before {
 }
 
 .language-switcher {
-  border: 1px solid wheat;
-  background-color: azure;
   position: relative;
-  top: 36px;
-  right: 42%;
+  top: 50px;
+  right: -48%;
   z-index: 10;
+  gap: 6px;
+}
+.language-switcher button {
+  background-color: #FFD050;
+  color: #232536;
+  border: none;
+  padding: 12px 8px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  transition: all 0.3s ease 0ms;
+  font-weight: 600;
+}
+.language-switcher button:hover {
+  background-color: #232536;
+  color: #FFD050;
 }
 @media (max-width: 768px) {
   .language-switcher {
     position: absolute;
-    top: 16px;
+    top: 36px;
     right: 10%;
   }
 }
