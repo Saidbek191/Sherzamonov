@@ -34,7 +34,7 @@ header {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	height: 100px;
+	height: 80px;
 	align-items: center;
 
 	.head__nav {
@@ -81,8 +81,8 @@ header {
 
 .language-switcher {
 	position: relative;
-	top: 50px;
-	right: -48%;
+	top: 60px;
+	right: -50%;
 	z-index: 10;
 	// display: flex;
 	gap: 6px;
@@ -104,13 +104,24 @@ header {
 
 	@media (max-width: 768px) {
 		position: absolute;
-		top: 36px;
-		right: 10%;
+		top: 50px;
+		right: 3%;
+
+		
 	}
+	@media (max-width: 425px){
+		button{
+			border: none;
+			padding: 6px 4px;
+			font-weight: 600;
+			font-size: 10px;
+		}
+	}
+
 }
 
 /* RESPONSIVE FOR TABLET & PHONE */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	body.lock {
 		overflow: hidden;
 	}
@@ -224,7 +235,7 @@ header {
 // 		font-size: 1.5rem;			
 // 	}
 // }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.head__nav {
 		display: none;
 	}
