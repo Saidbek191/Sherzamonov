@@ -39,7 +39,7 @@ header::before {
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
   align-items: center;
 }
 .head .head__nav {
@@ -80,8 +80,8 @@ header::before {
 
 .language-switcher {
   position: relative;
-  top: 50px;
-  right: -48%;
+  top: 60px;
+  right: -50%;
   z-index: 10;
   gap: 6px;
 }
@@ -101,13 +101,21 @@ header::before {
 @media (max-width: 768px) {
   .language-switcher {
     position: absolute;
-    top: 36px;
-    right: 10%;
+    top: 50px;
+    right: 3%;
+  }
+}
+@media (max-width: 425px) {
+  .language-switcher button {
+    border: none;
+    padding: 6px 4px;
+    font-weight: 600;
+    font-size: 10px;
   }
 }
 
 /* RESPONSIVE FOR TABLET & PHONE */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body.lock {
     overflow: hidden;
   }
@@ -194,7 +202,7 @@ header::before {
     padding: 0 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .head__nav {
     display: none;
   }
