@@ -51,10 +51,15 @@ header {
 		z-index: 2;
 
 		.head__link {
-			padding: 8px;
+			padding: 0 0 8px 0;
 			transition: all .3s ease;
 			border-bottom: 2px solid transparent;
 
+		}
+
+		.head__link.active a{
+			border-bottom: 2px solid v.$yellow;
+			padding: 0 0 8px 0;
 		}
 
 		.head__link:hover {
