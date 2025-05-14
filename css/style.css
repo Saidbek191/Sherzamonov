@@ -1313,6 +1313,176 @@ body {
 .what-next .what-next__body-row .next__title {
   padding: 16px 0;
 }
+/*  IIMPOR__SCSS__FILES  */
+.wrapper {
+  position: relative;
+}
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.9) url("../../images/icons/Spinner@1x-0.9s-283px-283px.gif") center/100px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0;
+}
+
+.wrapper._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact {
+  margin: 208px auto;
+  max-width: 768px;
+  width: 100%;
+}
+.contact .contact__text {
+  text-align: center;
+}
+.contact .contact__text .contact__text {
+  padding-bottom: 64px;
+}
+.contact .contact-info__box {
+  background-color: #592EA9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 48px 64px;
+}
+.contact .contact-info__box .work {
+  max-width: 294px;
+  width: 100%;
+}
+.contact .contact-info__box .work .work__day {
+  padding: 16px 0 0 0;
+}
+.contact .contact-info__box .work .support {
+  font-size: 16px;
+  line-height: 1.25;
+  opacity: 0.5;
+}
+.contact .contact-info__box .title-form {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #F4F4F4;
+  line-height: 1.4;
+  font-weight: 400;
+  opacity: 0.3;
+  padding-bottom: 16px;
+}
+.contact .contact-info__box .line {
+  border: 1px solid #F4F4F4;
+  opacity: 0.1;
+}
+.contact .contact-info__box .contact-us {
+  max-width: 294px;
+  width: 100%;
+  align-self: flex-start;
+}
+.contact .contact-info__box .contact-us .contact__mail {
+  font-size: 16px;
+  line-height: 1.25;
+  opacity: 0.5;
+}
+.contact .contact-info__box .day-phone {
+  padding: 16px 0 0 0;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Sen", sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.form * {
+  outline: none;
+}
+
+.form {
+  padding: 32px 0 0 0;
+  width: 100%;
+  max-width: 768px;
+}
+.form .form__item {
+  margin: 0 0 16px 0;
+}
+.form .form__label {
+  font-size: 16px;
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: "Inter", sans-serif;
+}
+.form .form__input {
+  border: 1px solid #4C4C4C;
+  max-width: 768px;
+  width: 100;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 18px;
+  transition: all 0.3s ease 0;
+}
+.form .form__input:focus {
+  box-shadow: 0 0 3px #EDC14A;
+}
+.form .form__input._error {
+  box-shadow: 0 0 3px #fc5a1e;
+}
+.form textarea.form__input {
+  min-height: 120px;
+  resize: vertical;
+  padding: 20px;
+  border: 1px solid #4C4C4C;
+  width: 100%;
+}
+.form .file__item {
+  position: relative;
+}
+.form .file__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  opacity: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.form .file__button {
+  display: inline-flex;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD050;
+  padding: 0 40px;
+  color: #232536;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.form .file__preview {
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 0 0 0;
+}
+.form .file__preview img {
+  max-width: 100%;
+}
+.form .form__button {
+  background-color: #FFD050;
+  color: #232536;
+  width: 100%;
+  padding: 16px 0;
+  font-family: "Sen", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 24px;
+}
+.form .form__button:hover {
+  background-color: #EDC14A;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
