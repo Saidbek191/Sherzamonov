@@ -55,9 +55,13 @@ header::before {
   z-index: 2;
 }
 .head .head__list .head__link {
-  padding: 8px;
+  padding: 0 0 8px 0;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
+}
+.head .head__list .head__link.active a {
+  border-bottom: 2px solid #FFD050;
+  padding: 0 0 8px 0;
 }
 .head .head__list .head__link:hover {
   border-bottom: 2px solid #FFD050;
