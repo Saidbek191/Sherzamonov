@@ -5,9 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alim Sherzamonov</title>
-	<link rel="stylesheet" href="/scss/css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-	<script defer src="js/script.js"></script>
+	<script defer src="./js/script.js"></script>
+	<script defer src="./js/form.js"></script>
 </head>
 
 <body>
@@ -31,11 +32,54 @@
 			</div>
 		</header>
 		<section class="contact">
-			<div class="container">
-				<form action="">
-
+			<!-- <div class="container"> -->
+				<div class="contact__text">
+				<h4 class="contact__subtitle sub-title">Contact us</h4>
+				<h2 class="contact__title title">Let’s Start a Conversation</h2>
+				<p class="contact__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+				</div>
+				<div class="contact-info__box">
+					<div class="work">
+						<p class="work__title title-form">Working hours</p>
+						<hr class="line">
+						<p class="work__day day-phone">Monday To Friday <br> 9:00 AM to 8:00 PM</p>
+						<p class="support title-form">Our Support Team is available 24/7</p>
+					</div>
+					<div class="contact-us">
+						<p class="contact__title title-form">Contact Me</p>
+						<hr class="line">
+						<p class="contact__phone day-phone">020 7993 2905</p>
+						<p class="contact__mail title-form">hello@finsweet.com</p>
+					</div>
+				</div>
+				<div class="form">
+				<form action="#" id="form" class="form__body">
+					<div class="form__item">
+						<label for="formName" class="form__label">Name*:</label>
+						<input type="text" id="formName" name="name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail*:</label>
+						<input type="text" id="formEmail" name="email" class="form__input _req _email">
+					</div>
+					<div class="form__item">
+						<label for="formMessage" class="form__label">Message:</label>
+						<textarea name="message" id="formMessage" class="form__input"></textarea>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Attach a photo</div>
+						<div class="file">
+							<div class="file__item">
+								<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+								<div class="file__button">Choose file</div>
+							</div>
+							<div id="formPreview" class="file__preview"></div>
+						</div>
+						<button type="submit" class="form__button">Send Message</button>
+					</div>
 				</form>
-			</div>
+				</div>
+			<!-- </div> -->
 		</section>
 	</div>
 	<footer class="footer">

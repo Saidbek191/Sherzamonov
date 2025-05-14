@@ -1,1 +1,159 @@
-@use '../base/variables';
+@use '../base/variables' as v;
+
+.contact{
+	margin: 208px auto;
+	max-width: 768px;
+	width: 100%;
+
+	.contact__text{
+		text-align: center;
+		.contact__subtitle{}
+		.sub-title{}
+		.contact__title{}
+		.title{}
+		.contact__text{
+			padding-bottom: 64px;
+		}
+		.text{}
+	}
+	.contact-info__box{
+		background-color: v.$purple;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 48px 64px;
+		.work{
+			max-width: 294px;
+			width: 100%;
+			.work__day{
+				padding: 16px 0 0 0;
+			}
+			.work__hour{}
+			.support{
+				font-size: 16px;
+				line-height: 1.25;
+				opacity: 0.5;
+			}
+		}
+		.title-form{
+			font-family: v.$fontFamily;
+			font-size: 14px;
+			color: v.$lightGrey;
+			line-height: 1.40;
+			font-weight: 400;
+			opacity: 0.3;
+			padding-bottom: 16px;
+		}
+		.line{
+			border: 1px solid v.$lightGrey;
+			opacity: 0.1;
+		}
+		.contact-us{
+			max-width: 294px;
+			width: 100%;
+			align-self: flex-start;
+			.contact__title{}
+			.contact__mail{
+				font-size: 16px;
+				line-height: 1.25;
+				opacity: 0.5;
+			}
+		}
+		.day-phone{
+			padding: 16px 0 0 0;
+			color: v.$light;
+			font-size: 20px;
+			font-family: v.$secondFont;
+			font-weight: 600;
+			line-height: 1.6;
+		}
+	}
+
+}
+.form * {
+	outline: none;
+}
+.form{
+	padding: 32px 0 0 0;
+	width: 100%;
+	max-width: 768px;
+	.form__body{}
+	.form__item{
+		margin: 0 0 16px 0;
+	}
+	.form__label{
+		font-size: 18px;
+		display: block;
+		margin: 0 0 10px 0;
+	}
+	.form__input{
+		border: 1px solid v.$darkGrey;
+		max-width: 768px;
+		width: 100;
+		height: 50px;
+		padding: 0 20px;
+		font-size: 18px;
+		transition: all 0.3s ease 0;
+	}
+	.form__input:focus{
+		box-shadow: 0 0 3px #EDC14A;
+	}
+
+	.form__input._error {
+		box-shadow: 0 0 3px #fc5a1e;
+	}
+	textarea.form__input{
+		min-height: 120px;
+		resize: vertical;
+		padding: 20px;
+		border: 1px solid v.$darkGrey;
+		width: 100%;
+	}
+
+	.file {}
+	.file__item{
+		position: relative;
+	}
+	.file__input{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		font-size: 0;
+		cursor: pointer;
+	}
+	.file__button{
+		display: inline-flex;
+		min-height: 40px;
+		justify-content: center;
+		align-items: center;
+		background-color: v.$yellow;
+		padding: 0 20px;
+		color: v.$black;
+		font-family: v.$fontFamily;
+		font-weight: 500;
+	}
+	.file__preview{
+		display: inline-block;
+		max-width: 100%;
+		padding: 10px 0 0 0;
+	}
+	.file__preview img{
+		max-width: 100%;
+	}
+	.form__button{
+		background-color: v.$yellow;
+		color: v.$black;
+		width: 100%;
+		padding: 16px 0;
+		font-family: v.$secondFont;
+		font-weight: 600;
+		line-height: 1.3;
+		font-size: 24px;
+		&:hover{
+			background-color: #EDC14A;
+		}
+	}
+}
