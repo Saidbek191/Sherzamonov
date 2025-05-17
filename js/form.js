@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			return;
 		}
 
-		var reader = new FileReader();
+		let reader = new FileReader();
 		reader.onload = function (e) {
 			formPreview.innerHTML = `<img src="${e.target.result}" alt="photo">`;
 		};
