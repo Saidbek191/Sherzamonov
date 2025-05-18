@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			formPreview.innerHTML = `<img src="${e.target.result}" alt="photo">`;
 		};
 		reader.onerror = function (e) {
-			alert('Warning');
+			alert('Error');
 		};
 		reader.readAsDataURL(file);
 	}

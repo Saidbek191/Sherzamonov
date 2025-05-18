@@ -7,6 +7,9 @@
 .footer__body {
 	padding: 3.2rem 0;
 	font-family: v.$fontFamily;
+	@media (max-width: 375px) {
+		padding: 0;
+	}
 }
 
 
@@ -27,6 +30,12 @@
 	letter-spacing: -2px;
 	color: v.$light;
 	padding: 5rem 4rem;
+	@media (max-width: 426px) {
+		font-size: 1.50rem;
+		padding: 4.5rem 3rem;
+		letter-spacing: 0px;
+		line-height: 1;
+	}
 }
 
 .donation__input,

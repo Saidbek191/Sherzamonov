@@ -45,7 +45,7 @@ header {
 	.head__list {
 		display: flex;
 		align-items: center;
-		gap: 24px;
+		gap: 1.8rem;
 		text-transform: uppercase;
 		position: relative;
 		z-index: 2;
@@ -87,21 +87,24 @@ header {
 .language-switcher {
 	position: relative;
 	top: 60px;
-	right: -50%;
+	right: -48%;
 	z-index: 10;
-	// display: flex;
-	gap: 6px;
+	gap: 1.2rem;
 
 	button {
 		background-color: v.$yellow;
 		color: v.$black;
 		border: none;
-		padding: 12px 8px;
+		padding: 0.8rem 0.6rem;
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
 		transition: all .3s ease 0ms;
 		font-weight: 600;
 
 		&:hover {
+			background-color: v.$black;
+			color: v.$yellow;
+		}
+		&.active {
 			background-color: v.$black;
 			color: v.$yellow;
 		}
@@ -117,9 +120,9 @@ header {
 	@media (max-width: 425px){
 		button{
 			border: none;
-			padding: 6px 4px;
+			padding: 0.4rem 0.2rem;
 			font-weight: 600;
-			font-size: 10px;
+			font-size: 0.7rem;
 		}
 	}
 
@@ -142,8 +145,8 @@ header {
 	.head__menu {
 		display: block;
 		position: relative;
-		width: 30px;
-		height: 20px;
+		width: 2.1rem;
+		height: 1.4rem;
 		z-index: 3;
 
 		span {
@@ -199,7 +202,7 @@ header {
 		width: 100%;
 		height: 100%;
 		background-color: v.$black;
-		padding: 80px 0 0 0;
+		padding: 5.7rem 0 0 0;
 		justify-content: center;
 		font-size: 2rem;
 		text-align: center;
@@ -211,7 +214,7 @@ header {
 			align-content: center;
 
 			& li {
-				margin: 0 0 40px 0;
+				margin: 0 0 2.8rem 0;
 			}
 
 			a {
@@ -231,15 +234,15 @@ header {
 /* SOME BRAKE POINTS */
 @media (max-width: 1289px) {
 	.head {
-		padding: 0 20px;
+		padding: 0 1.4rem;
 	}
 }
 
-// @media (max-width: 564px) {
-// 	.head-nav__logo {
-// 		font-size: 1.5rem;			
-// 	}
-// }
+	// @media (max-width: 564px) {
+	// 	.head-nav__logo {
+	// 		font-size: 1.5rem;			
+	// 	}
+	// }
 @media (max-width: 768px) {
 	.head__nav {
 		display: none;

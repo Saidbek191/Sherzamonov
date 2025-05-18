@@ -15,3 +15,17 @@ $(document).ready(function() {
       link.classList.add('active');
     }
   });
+
+
+function changeLanguage(lang, button) {
+	// Здесь сделаю логику смены языка
+	console.log("Выбран язык:", lang);
+
+	// Снимаем класс "active" со всех кнопок
+	document.querySelectorAll('.lang__switch').forEach(btn => {
+		btn.classList.remove('active');
+	});
+
+	// Добавляем "active" к нажатой кнопке
+	button.classList.add('active');
+}
