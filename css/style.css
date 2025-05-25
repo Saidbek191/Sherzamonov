@@ -84,7 +84,7 @@ header::before {
 
 .language-switcher {
   position: relative;
-  top: 60px;
+  top: 59px;
   right: -48%;
   z-index: 10;
   gap: 1.2rem;
@@ -758,7 +758,7 @@ img {
 .about__content {
   width: 40rem;
   position: relative;
-  left: 30%;
+  left: 32%;
   padding-top: 21.96rem;
 }
 
