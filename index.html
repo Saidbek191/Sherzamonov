@@ -16,7 +16,7 @@
 		<header>
 			<div class="container">
 				<div class="head">
-					<div class="head__logo"><a href="#home">Алим <span>Шерзамонов</span></a></div>
+					<div class="head__logo"><a href="#home">Alim <span>Sherzamonov</span></a></div>
 					<div class="language-switcher">
 						<button class="lang__switch" onclick="changeLanguage('en', this)">EN</button>
 						<button class="lang__switch" onclick="changeLanguage('ru', this)">RU</button>
@@ -27,10 +27,10 @@
 					</div>
 					<nav class="head__nav">
 						<ul class="head__list">
-							<li class="head__link active"><a href="/index.html">Асос</a></li>
-							<li class="head__link"><a href="/blog.html">Блог</a></li>
-							<li class="head__link"><a href="/about-me.html">Дар бораи ман</a></li>
-							<li class="head__link"><a href="/contact.html">Тамос</a></li>
+							<li data-i18n="homeNav" class="head__link active"><a href="/index.html">Асос</a></li>
+							<li data-i18n="blogNav" class="head__link"><a href="/blog.html">Блог</a></li>
+							<li data-i18n="aboutNav" class="head__link"><a href="/about-me.html">Дар бораи ман</a></li>
+							<li data-i18n="contactNav" class="head__link"><a href="/contact.html">Тамос</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -39,15 +39,15 @@
 		<section class="home" id="home">
 			<div class="container">
 				<div class="home__info">
-					<div class="home__sub">Posted on <span>startup</span></div>
-					<h1 class="home__title">Step-by-step guide to choosing <br> great font pairs</h1>
-					<div class="home__date">By <span>James West</span> | May 23, 2022 </div>
-					<p class="home__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					<div class="home__sub" data-i18n="homeSubText">Posted on <span>startup</span></div>
+					<h1 class="home__title" data-i18n="homeTitleText">Step-by-step guide to choosing <br> great font pairs</h1>
+					<div class="home__date" data-i18n="homeDateText">By <span>James West</span> | May 23, 2022 </div>
+					<p class="home__text" data-i18n="homeTextText">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 						<br>fugiat
 						nulla pariatur. Excepteur sint occaecat cupidatat non proident.
 					</p>
 					<a href="#" class="home__btn btn-yellow">
-						<div>Donation</div>
+						<div data-i18n="homeBtnText">Donation</div>
 					</a>
 				</div>
 			</div>
@@ -55,42 +55,42 @@
 		<section class="featured-post">
 			<div class="container">
 				<div class="row__title-box">
-					<h2 class="title__left title">Паёми охирин</h2>
+					<h2 class="title__left title" data-i18n="titleLeftText">Паёми охирин</h2>
 					<div class="row__right-box">
-						<h2 class="title__right title">Паёмҳо</h2>
-						<a href="./blog.html" class="columns__more">Васеътар</a>
+						<h2 class="title__right title" data-i18n="titleRightText">Паёмҳо</h2>
+						<a href="./blog.html" class="columns__more" data-i18n="columnsMoreText">Васеътар</a>
 					</div>
 				</div>
 				<div class="columns">
 					<div class="columns__left">
 						<img src="/images/featured/picture1.jpg" alt="picture" class="columns__img">
-						<p class="columns__date date">By <span class="name">John Doe</span> l May 23, 2022</p>
-						<h3 class="columns__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod
+						<p class="columns__date date" data-i18n="columnsDataText">By <span class="name">John Doe</span> l May 23, 2022</p>
+						<h3 class="columns__subtitle" data-i18n="columnsSubtitleText">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod
 							tempor.
 						</h3>
-						<p class="columns__text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+						<p class="columns__text text" data-i18n="columnsTextText">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
 							dolore<br>eu
 							fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 						<a href="/blog-post.html" class="columns__btn btn-yellow">
-							<div>Бештар ></div>
+							<div data-i18n="columnsBtnText">Бештар ></div>
 						</a>
 					</div>
 					<div class="columns__right">
 						<a href="./blog.html"><div class="post-box">
-							<p class="columns__date date">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
-							<h3 class="columns__subtitle">8 Figma design systems that <br> you can download for free <br> today.</h3>
+							<p class="columns__date date" data-i18n="columnsDataText2">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
+							<h3 class="columns__subtitle" data-i18n="columnsSubtitleText2">8 Figma design systems that <br> you can download for free <br> today.</h3>
 						</div></a>
 						<a href="./blog.html"><div class="post-box">
-							<p class="columns__date date">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
-							<h3 class="columns__subtitle">8 Figma design systems that <br> you can download for free <br> today.</h3>
+							<p class="columns__date date" data-i18n="columnsDataText3">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
+							<h3 class="columns__subtitle" data-i18n="columnsSubtitleText3">8 Figma design systems that <br> you can download for free <br> today.</h3>
 						</div></a>
 						<a href="./blog.html"><div class="post-box">
-							<p class="columns__date date">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
-							<h3 class="columns__subtitle">8 Figma design systems that <br> you can download for free <br> today.</h3>
+							<p class="columns__date date" data-i18n="columnsDataText4">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
+							<h3 class="columns__subtitle" data-i18n="columnsSubtitleText4">8 Figma design systems that <br> you can download for free <br> today.</h3>
 						</div></a>
 						<a href="./blog.html"><div class="post-box">
-							<p class="columns__date date">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
-							<h3 class="columns__subtitle">8 Figma design systems that <br> you can download for free <br> today.</h3>
+							<p class="columns__date date" data-i18n="columnsDataText5">By <span class="name">John Deo</span> l Aug 23, 2021 </p>
+							<h3 class="columns__subtitle" data-i18n="columnsSubtitleText5">8 Figma design systems that <br> you can download for free <br> today.</h3>
 						</div></a>
 					</div>
 				</div>
@@ -102,14 +102,14 @@
 					<img src="./images/about/photo3.jpg" alt="picture02" class="person_photo">
 					<div class="about__content">
 						<div class="about__text-box">
-							<h4 class="full-name sub-title">Алим Шерзамонов</h4>
-							<h2 class="biography title">Зиндагинома</h2>
-							<p class="story text">Алим Мамадрасулович Шерзамонов, зодаи 24 декабри соли 1964 дар шаҳри Хоруғи ВМКБ
+							<h4 class="full-name sub-title" data-i18n="fullNameText">Алим Шерзамонов</h4>
+							<h2 class="biography title" data-i18n="biographyText">Зиндагинома</h2>
+							<p class="story text" data-i18n="storyText">Алим Мамадрасулович Шерзамонов, зодаи 24 декабри соли 1964 дар шаҳри Хоруғи ВМКБ
 								Тоҷикистон ба дунё омад. Ӯ аз 1972 то 1982 дар мактаби миёнаи №8 шаҳри Хоруғ таҳсил ва аз 1983 то 1985
 								дар артиши
 								Шӯравӣ хидмат кардааст.</p>
 							<a href="/about-me.html" class="columns__btn about-btn">
-								<div>Бештар ></div>
+								<div data-i18n="columnsBtnText">Бештар ></div>
 							</a>
 						</div>
 					</div>
@@ -123,16 +123,16 @@
 				<div class="about-mision__body">
 					<div class="about-mision__column">
 						<div class="about__info">
-							<div class="about__sub sub-title">Вазифаи Мо</div>
-							<h2 class="about__title title">Мо Анҷумани Озодандешони Тоҷик</h2>
-							<p class="about__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							<div class="about__sub sub-title" data-i18n="aboutSubText">Вазифаи Мо</div>
+							<h2 class="about__title title" data-i18n="aboutTitleText">Мо Анҷумани Озодандешони Тоҷик</h2>
+							<p class="about__text text" data-i18n="aboutTextText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua.</p>
-							<a href="/about-me.html" class="more-link">Бештар ></a>
+							<a href="/about-me.html" class="more-link" data-i18n="moreLinkText">Бештар ></a>
 						</div>
 						<div class="mision__info">
-							<div class="mision__sub sub-title">Дурнамои Мо</div>
-							<h2 class="mision__title title">Creating valuable content for creatives all around the world</h2>
-							<p class="misin__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							<div class="mision__sub sub-title" data-i18n="misionSubText">Дурнамои Мо</div>
+							<h2 class="mision__title title" data-i18n="misionTitleText">Creating valuable content for creatives all around the world</h2>
+							<p class="mision__text text" data-i18n="misionTextText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</div>
@@ -145,14 +145,14 @@
 		<div class="container">
 			<div class="footer__body">
 				<div class="footer__donation">
-					<div class="donation__text">
+					<div class="donation__text" data-i18n="footerdonationText">
 						<h3>Subscribe to our news letter to get latest updates and news</h3>
 					</div>
 					<!-- <div class="donation__input"> -->
 					<input class="donation__input" type="e-mail" placeholder="Enter Your E-mail">
 					<!-- </div> -->
 					<a href="#" class="columns__btn donation">
-						<div>Donation</div>
+						<div data-i18n="homeBtnText">Donation</div>
 					</a>
 				</div>
 				<div class="footer__contacts">
