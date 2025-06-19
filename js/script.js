@@ -29,3 +29,30 @@ function changeLanguage(lang, button) {
 	// Добавляем "active" к нажатой кнопке
 	button.classList.add('active');
 }
+
+// Carousel-btn
+const track = document.querySelector('.carousel-track');
+const cards = document.querySelectorAll('.cards__row');
+const prev = document.querySelector('.pre');
+const next = document.querySelector('.nex');
+let index = 0;
+
+function updateCarousel () {
+	const cardWidth = cards [0].offsetWidth + 45;
+	track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+next.addEventListener('click', () => {
+	if (index < cards.length - 1) {
+		index++;
+		updateCarousel();
+	}
+});
+
+prev.addEventListener('click', () => {
+	if (index > 0) {
+		index--;
+		updateCarousel(); 
+	}
+});
+window.addEventListener('resize', updateCarousel);
