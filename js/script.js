@@ -42,7 +42,7 @@ function updateCarousel () {
 	track.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-next.addEventListener('click', () => {
+next.addEventListener ('click', () => {
 	if (index < cards.length - 1) {
 		index++;
 		updateCarousel();
