@@ -7,9 +7,9 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	background-blend-mode: overlay;
 	background-size: cover;
-	background-position: right;
+	background-position: center;
 	background-repeat: no-repeat;
-	height: 80vh;
+	height: 100vh;
 }
 
 
@@ -85,6 +85,8 @@
 @media (max-width: 489px) {
 	.home {
 		height: 80vh;
+		background: none;
+		background-color: v.$black;
 	}
 
 	.home__info {
