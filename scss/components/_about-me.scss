@@ -262,26 +262,26 @@ img {
 
 @media (max-width: 769px) {
 	.about-me {
-		margin: 2rem 0 0 0;
+		margin: 2rem 0 2rem 0.5rem;
 	}
-
+	
 	.content {
 		justify-content: center;
 	}
-
+	
 	.person_photo {
 		display: none;
 	}
-
+	
 	.about__content {
 		position: static;
 		display: block;
 		width: 100%;
 		padding-top: 2rem;
 	}
-
+	
 	.about__text-box {
-		padding: 2rem;
+		padding: 2rem 0.5rem;
 		background-color: v.$black;
 	}
 

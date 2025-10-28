@@ -5,6 +5,8 @@ $(document).ready(function() {
 	});
 });
 
+
+
  // Получаем текущий путь
   const currentPath = window.location.pathname;
 
@@ -17,7 +19,7 @@ $(document).ready(function() {
   });
 
 
-function changeLanguage(lang, button) {
+async function changeLanguage(lang, button) {
 	// Здесь сделаю логику смены языка
 	console.log("Выбран язык:", lang);
 
@@ -28,7 +30,31 @@ function changeLanguage(lang, button) {
 
 	// Добавляем "active" к нажатой кнопке
 	button.classList.add('active');
+
+	try {
+		const response = await fetch(`./locales/${lang}.json`);
+		const translations = await response.json();
+
+		document.querySelectorAll('[data-i18n]').forEach(el => {
+			const key = el.getAttribute('data-i18n');
+			if (translations[key]) {
+				el.innerHTML = translations[key];
+			}
+		});
+
+		localStorage.setItem('lang', lang);
+	} catch	(error) {
+		console.error('Ошибка загрузки перевода:', error);
+	}
 }
+
+window.addEventListener('DOMContentLoaded', async () => {
+	const savedLang = localStorage.getItem('lang') || 'ru';
+	const activeButton = document.querySelector(`.lang__switch[onclick*="${savedLang}"]`);
+	if (activeButton) {
+		changeLanguage(savedLang, activeButton);
+	}
+});
 
 // Carousel-btn
 const track = document.querySelector('.carousel-track');

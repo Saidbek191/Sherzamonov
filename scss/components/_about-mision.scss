@@ -34,6 +34,9 @@
 	flex-direction: column;
 	padding: 96px 0 96px 80px;
 	flex: 1 1 auto;
+	a {
+		color: v.$purple;
+	}
 }
 
 .sub-title {
@@ -159,7 +162,7 @@
 	}
 
 	.about-mision__column {
-		padding: 0 2rem;
+		padding: 0 0.5rem;
 
 		.about__info {
 			padding: 1.5rem 0;
