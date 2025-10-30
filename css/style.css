@@ -325,6 +325,7 @@ img {
   font-size: 3.5rem;
   line-height: 1.2;
   letter-spacing: -2px;
+  text-transform: uppercase;
 }
 
 .home__date {
