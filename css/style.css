@@ -497,6 +497,9 @@ img {
   cursor: pointer;
   background-color: #FBF6EA;
 }
+.post-box:active {
+  background-color: #FBF6EA;
+}
 
 .columns__btn {
   display: inline-block;
@@ -659,6 +662,7 @@ img {
   font-family: "Inter", sans-serif;
   line-height: 2;
   color: #6D6E76;
+  padding-inline: 2rem;
 }
 
 .columns__more {

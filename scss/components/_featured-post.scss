@@ -107,6 +107,9 @@
 		cursor: pointer;
 		background-color: v.$lightYellow;
 	}
+	&:active {
+		background-color: v.$lightYellow;
+	}
 }
 
 .columns__btn {

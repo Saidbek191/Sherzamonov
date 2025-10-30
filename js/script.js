@@ -6,7 +6,6 @@ $(document).ready(function() {
 });
 
 
-
  // Получаем текущий путь
   const currentPath = window.location.pathname;
 
@@ -37,8 +36,10 @@ async function changeLanguage(lang, button) {
 
 		document.querySelectorAll('[data-i18n]').forEach(el => {
 			const key = el.getAttribute('data-i18n');
-			if (translations[key]) {
+			if (translations[key].includes('<')) {
 				el.innerHTML = translations[key];
+			} else {
+				el.textContent = translations[key];
 			}
 		});
 
@@ -63,6 +64,7 @@ const prev = document.querySelector('.pre');
 const next = document.querySelector('.nex');
 let index = 0;
 
+
 function updateCarousel () {
 	const cardWidth = cards [0].offsetWidth + 45;
 	track.style.transform = `translateX(-${index * cardWidth}px)`;
@@ -82,3 +84,29 @@ prev.addEventListener('click', () => {
 	}
 });
 window.addEventListener('resize', updateCarousel);
+
+// CARUSEL
+const leftImg = document.querySelector('.columns__img');
+const leftDate = document.querySelector('.columns__left .columns__date');
+const leftTitle = document.querySelector('.columns__left .columns__subtitle');
+const leftText = document.querySelector('.columns__left .columns__text');
+const leftBtn = document.querySelector('.columns__left .columns__btn');
+
+const posts = document.querySelectorAll('.post-box');
+
+posts.forEach(post => {
+	const updateLeft = () => {
+		leftImg.src = post.dataset.img;
+		leftDate.innerHTML = post.dataset.date;
+		leftTitle.innerHTML = post.dataset.title;
+		leftText.innerHTML = post.dataset.text;
+		leftBtn.href = post.dataset.link;
+
+		posts.forEach(p => p.classList.remove('active'));
+		post.classList.add('active');
+	};
+
+	post.addEventListener('mouseenter', updateLeft);
+
+	post.addEventListener('click', updateLeft);
+});
