@@ -413,6 +413,10 @@ img {
   border: #6D6E76 1px solid;
   margin: 3rem 0 0 0;
   flex: 1 1 auto;
+  transition: opacity 0.3s ease;
+}
+.columns__left.updating {
+  opacity: 0.3;
 }
 
 .columns__img {
@@ -486,6 +490,10 @@ img {
 .post-box {
   transition: background-color 0.3s ease 0s;
 }
+.post-box.active {
+  background-color: #FBF6EA;
+  border-left: 3px solid #592EA9;
+}
 .post-box .date {
   padding: 2rem 0 0.5rem 2rem;
 }
@@ -495,9 +503,6 @@ img {
 }
 .post-box:hover {
   cursor: pointer;
-  background-color: #FBF6EA;
-}
-.post-box:active {
   background-color: #FBF6EA;
 }
 
@@ -522,7 +527,7 @@ img {
 @media (max-width: 899px) {
   .title {
     font-size: 2rem;
-    line-height: 0;
+    line-height: px0;
   }
   .columns__img {
     padding: 2rem;
