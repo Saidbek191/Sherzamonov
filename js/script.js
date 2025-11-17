@@ -17,8 +17,53 @@ $(document).ready(function() {
     }
   });
 
+	// Изменение языка в статьях
+		
+		let currentLang = "en";
+		let currentArticlesSlug = "article-1";
+		
+		document.querySelectorAll('[data-lang]').forEach(btn => {
+			btn.addEventListener('click', () => {
+				currentLang = btn.dataset.lang;
+				loadArticle(currentArticlesSlug, currentLang);
+			});
+		});
+		
+		function loadArticle(slug, lang) {
+		const path = `article/${slug}.${lang}.md`;
 
-async function changeLanguage(lang, button) {
+		fetch(path)
+		.then(res => res.text())
+		.then(md => {
+			const html = markdownToHtml(md);
+			document.getElementById("article-container").innerHTML = html;
+		})
+		.catch(() => {
+			document.getElementById("article-container").innerHTML =
+			`<p>Перевод для языка "${lang}" недоступен.</p>`;
+		});
+	}
+
+	function markdownToHtml(md) {
+		return md
+		.replace(/^# (.*$)/gim, '<h1>$1</h1>')
+		.replace(/^# (.*$)/gim, '<h2>$1</h2>')
+		.replace(/^# (.*$)/gim, '<h3>$1</h3>')
+		.replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
+		.replace(/\*(.*)\*/gim, '<i>$1</i>')
+		.replace(/\n/gim, '<br>');
+	}
+
+		document.querySelectorAll(".aricle-card").forEach(card => {
+		
+		card.addEventListener('click', () => {
+			currentArticlesSlug = card.dataset.slug;
+			loadArticle(currentArticlesSlug, currentLang);
+		});
+	});
+	
+	
+	async function changeLanguage(lang, button) {
 	// Здесь сделаю логику смены языка
 	console.log("Выбран язык:", lang);
 
@@ -57,7 +102,7 @@ document.querySelectorAll('.leng__switch').forEach(btn => {
 		changeLanguage(btn.dataset.leng, btn);
 	});
 });
-	const savedLeng = localStorage.getItem('leng') || 'ru';
+	const savedLeng = localStorage.getItem('leng') || 'en';
 	const activeButton = document.querySelector(`.leng__switch[data-leng="${savedLeng}"]`);
 	if (activeButton) {
 		changeLanguage(savedLeng, activeButton);
