@@ -17,132 +17,8 @@ $(document).ready(function() {
     }
   });
 
-	// Изменение языка в статьях
 
-			let currentLang = "en";
-			let currentArticlesSlug = "article-01";
-			
-			const articleContainer = document.getElementById("article-container");
-			
-			document.querySelectorAll('[data-leng]').forEach(btn => {
-				btn.addEventListener('click', () => {
-					currentLang = btn.dataset.leng;
-					loadArticle(currentArticlesSlug, currentLang);
-				});
-			});
-			
-			function loadArticle(slug, lang) {
-				const path = `articles/${slug}/${lang}.md`;
-
-		fetch(path)
-		.then(res => {
-			if (!res.ok) throw new Error("file missing");
-			return res.text();
-		})
-		.then(md => {
-			articleContainer.innerHTML = markdownToHtml(md);
-		})
-		.catch(() => {
-			articleContainer.innerHTML =
-			`<p>Перевод для языка "${lang}" недоступен.</p>`;
-		});
-	}
-
-	function markdownToHtml(md) {
-		return md
-		.replace(/^### (.*$)/gim, '<h3 class="blog-post__title title">$1</h3>')
-		.replace(/^## (.*$)/gim, '<h2 class="blog-post__title title">$1</h2>')
-		.replace(/^# (.*$)/gim, '<h1 class="blog-post__title title">$1</h1>')
-		.replace(/\*\*(.+?)\*\*/gim, '<b>$1</b>')
-		.replace(/\*(.+?)\*/gim, '<i>$1</i>')
-		.replace(/^(?!<h|<p>)(.+)$/gim, '<p class="blog-post__text text">$1</p>')
-		.replace(/\n/gim, '<br>');
-	}
-
-	loadArticle(currentArticlesSlug, currentLang);
-		
-		async function changeLanguage(lang, button) {
-			// Здесь сделаю логику смены языка
-			console.log("Выбран язык:", lang);
-			
-			// Снимаем класс "active" со всех кнопок
-			document.querySelectorAll('.leng__switch').forEach(btn => {
-				btn.classList.remove('active');
-			});
-			
-			// Добавляем "active" к нажатой кнопке
-			button.classList.add('active');
-			
-			try {
-				const response = await fetch(`./locales/${lang}.json`);
-				const translations = await response.json();
-				
-				document.querySelectorAll('[data-i18n]').forEach(el => {
-					const key = el.getAttribute('data-i18n');
-					const value = translations[key];
-					if (!value) return;
-					
-			if (value.includes('<')) {
-				el.innerHTML = value;
-			} else {
-				el.textContent = value;
-			}
-		});
-		
-		localStorage.setItem('leng', lang);
-	} catch	(error) {
-		console.error('Ошибка загрузки перевода:', error);
-	}
-}
-
-document.querySelectorAll('.leng__switch').forEach(btn => {
-	btn.addEventListener('click', () => {
-		changeLanguage(btn.dataset.leng, btn);
-	});
-});
-const savedLeng = localStorage.getItem('leng') || 'en';
-const activeButton = document.querySelector(`.leng__switch[data-leng="${savedLeng}"]`);
-if (activeButton) {
-	changeLanguage(savedLeng, activeButton);
-}
-
-
-// Carousel-btn
-const track = document.querySelector('.carousel-track');
-const cards = document.querySelectorAll('.cards__row');
-const prev = document.querySelector('.pre');
-const next = document.querySelector('.nex');
-let index = 0;
-
-
-function updateCarousel () {
-	if (!cards.length) return;
-	const cardWidth = cards[0].offsetWidth + 45;
-	track.style.transform = `translateX(-${index * cardWidth}px)`;
-}
-
-
-if(track && cards.length && prev && next) {
-
-	next.addEventListener('click', () => {
-		if (index < cards.length - 1) {
-			index++;
-			updateCarousel();
-		}
-	});
-	
-	prev.addEventListener('click', () => {
-		if (index > 0) {
-			index--;
-			updateCarousel(); 
-		}
-	});
-	
-	window.addEventListener('resize', updateCarousel);
-	updateCarousel();
-}
-
-// CARUSEL
+	// CARUSEL
 
 const articles = {
 	en: [
@@ -213,4 +89,136 @@ if(posts.length && left.img && left.date && left.title && left.text && left.btn)
 		updateLeft(posts[0]);
 	}
 }
+
+
+
+	document.querySelectorAll('.leng__switch').forEach(btn => {
+	btn.addEventListener('click', () => {
+		changeLanguage(btn.dataset.leng, btn);
+	});
+});
+const savedLeng = localStorage.getItem('leng') || 'en';
+const activeButton = document.querySelector(`.leng__switch[data-leng="${savedLeng}"]`);
+if (activeButton) {
+	changeLanguage(savedLeng, activeButton);
+}
+
+	// Изменение языка в статьях
+
+			let currentLang = localStorage.getItem('leng') || "en";
+			const articleContainer = document.getElementById("article-container");
+			let currentArticlesSlug = articleContainer.dataset.slug;
+			
+			
+			document.querySelectorAll('[data-leng]').forEach(btn => {
+				btn.addEventListener('click', () => {
+					currentLang = btn.dataset.leng;
+					loadArticle(currentArticlesSlug, currentLang);
+				});
+			});
+			
+			function loadArticle(slug, lang) {
+				const path = `articles/${slug}/${lang}.md`;
+
+		fetch(path)
+		.then(res => {
+			if (!res.ok) throw new Error("file missing");
+			return res.text();
+		})
+		.then(md => {
+			articleContainer.innerHTML = markdownToHtml(md);
+		})
+		.catch(() => {
+			articleContainer.innerHTML =
+			`<p>Перевод для языка "${lang}" недоступен.</p>`;
+		});
+	}
+
+	function markdownToHtml(md) {
+		return md
+		.replace(/^### (.*$)/gim, '<h3 class="blog-post__title title">$1</h3>')
+		.replace(/^## (.*$)/gim, '<h2 class="blog-post__title title">$1</h2>')
+		.replace(/^# (.*$)/gim, '<h1 class="blog-post__title title">$1</h1>')
+		.replace(/\*\*(.+?)\*\*/gim, '<b>$1</b>')
+		.replace(/\*(.+?)\*/gim, '<i>$1</i>')
+		.replace(/^(?!<h|<p>)(.+)$/gim, '<p class="blog-post__text text">$1</p>')
+		.replace(/\n/gim, '<br>');
+	}
+
+	loadArticle(currentArticlesSlug, currentLang);
+		
+		async function changeLanguage(lang, button) {
+			// Здесь сделаю логику смены языка
+			console.log("Выбран язык:", lang);
+			
+			// Снимаем класс "active" со всех кнопок
+			document.querySelectorAll('.leng__switch').forEach(btn => {
+				btn.classList.remove('active');
+			});
+			
+			// Добавляем "active" к нажатой кнопке
+			button.classList.add('active');
+			
+			try {
+				const response = await fetch(`./locales/${lang}.json`);
+				const translations = await response.json();
+				
+				document.querySelectorAll('[data-i18n]').forEach(el => {
+					const key = el.getAttribute('data-i18n');
+					const value = translations[key];
+					if (!value) return;
+					
+			if (value.includes('<')) {
+				el.innerHTML = value;
+			} else {
+				el.textContent = value;
+			}
+		});
+		
+		localStorage.setItem('leng', lang);
+
+	} catch	(error) {
+		console.error('Ошибка загрузки перевода:', error);
+	}
+}
+
+
+
+
+// Carousel-btn
+const track = document.querySelector('.carousel-track');
+const cards = document.querySelectorAll('.cards__row');
+const prev = document.querySelector('.pre');
+const next = document.querySelector('.nex');
+let index = 0;
+
+
+function updateCarousel () {
+	if (!cards.length) return;
+	const cardWidth = cards[0].offsetWidth + 45;
+	track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+
+if(track && cards.length && prev && next) {
+
+	next.addEventListener('click', () => {
+		if (index < cards.length - 1) {
+			index++;
+			updateCarousel();
+		}
+	});
+	
+	prev.addEventListener('click', () => {
+		if (index > 0) {
+			index--;
+			updateCarousel(); 
+		}
+	});
+	
+	window.addEventListener('resize', updateCarousel);
+	updateCarousel();
+}
+
+
 });
