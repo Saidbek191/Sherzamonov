@@ -223,8 +223,6 @@ header::before {
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -377,7 +375,7 @@ img {
     background-color: #232536;
   }
   .home__info {
-    padding: 80px 0 0 0;
+    padding: 150px 0 0 0;
     margin: 0 0 0 10px;
   }
   .home__title {
@@ -817,6 +815,11 @@ img {
   text-align: left;
   flex: 0 0 50%;
 }
+@media (max-width: 1000px) {
+  .about-me__item-info {
+    flex: 0 0 80%;
+  }
+}
 
 .about-me__img,
 img {
@@ -867,6 +870,11 @@ img {
   display: flex;
   flex-direction: column;
   flex: 0 0 50%;
+}
+@media (max-width: 1000px) {
+  .second-block__item-info {
+    flex: 0 0 80%;
+  }
 }
 
 .team__row {
@@ -1057,6 +1065,9 @@ input {
   padding: 0.8rem 10rem 0.8rem 1.5rem;
   background-color: transparent;
   outline: none;
+}
+.donation__input::-moz-placeholder, input::-moz-placeholder {
+  color: #6D6E76;
 }
 .donation__input::placeholder,
 input::placeholder {
@@ -1358,6 +1369,7 @@ body {
 }
 
 .blog-post__body {
+  max-width: 100%;
   width: 844px;
   margin: 0 auto;
 }
@@ -1573,6 +1585,4 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

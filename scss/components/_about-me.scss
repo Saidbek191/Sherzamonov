@@ -68,6 +68,9 @@
 	flex-direction: column;
 	text-align: left;
 	flex: 0 0 50%;
+	@media (max-width: 1000px) {
+		flex: 0 0 80%;
+	}
 }
 
 .about-me__img,
@@ -118,6 +121,9 @@ img {
 	display: flex;
 	flex-direction: column;
 	flex: 0 0 50%;
+	@media (max-width: 1000px) {
+		flex: 0 0 80%;
+	}
 }
 
 .block__title {}
