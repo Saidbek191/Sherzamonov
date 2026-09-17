@@ -578,7 +578,7 @@ img {
   }
 }
 /*  IIMPOR__SCSS__FILES  */
-.about-mision {
+.about-mission {
   top: 0;
   left: 0;
   margin: 8rem 0 0 0;
@@ -609,17 +609,17 @@ img {
   background-color: #592EA9;
 }
 
-.about-mision__body {
+.about-mission__body {
   display: flex;
   justify-content: space-between;
   background-color: #F4F0F8;
 }
-.about-mision__body.sub-title {
+.about-mission__body.sub-title {
   display: flex;
   justify-content: space-between;
 }
 
-.about-mision__column {
+.about-mission__column {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -672,14 +672,14 @@ img {
   align-content: flex-start;
 }
 
-.mision__info {
+.mission__info {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   padding: 98px 108px 138px 0;
 }
 
-.mision__title {
+.mission__title {
   font-size: 28px;
   line-height: 1.2;
   letter-spacing: -1px;
