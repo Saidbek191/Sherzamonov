@@ -1,7 +1,7 @@
 @use '../base/variables' as v;
 @use '../modules/mixins' as m;
 
-.about-mision {
+.about-mission {
 	top: 0;
 	left: 0;
 	margin: 8rem 0 0 0;
@@ -11,7 +11,7 @@
 	@include m.line();
 }
 
-.about-mision__body {
+.about-mission__body {
 	display: flex;
 	justify-content: space-between;
 	background-color: v.$lavender;
@@ -22,7 +22,7 @@
 	}
 }
 
-.about-mision__column {
+.about-mission__column {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -75,14 +75,14 @@
 	align-content: flex-start;
 }
 
-.mision__info {
+.mission__info {
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
 	padding: 98px 108px 138px 0;
 }
 
-.mision__title {
+.mission__title {
 	font-size: 28px;
 	line-height: 1.2;
 	letter-spacing: -1px;
@@ -101,11 +101,11 @@
 // RESPONSIVE FOR TABLET & PHONE
 
 @media (max-width: 1131px) {
-	.about-mision {
+	.about-mission {
 		margin: 80px 0 0 0;
 	}
 
-	.about-mision__column {
+	.about-mission__column {
 		flex-wrap: wrap;
 		padding: 0 2rem;
 		gap: 0;
@@ -128,11 +128,11 @@
 			font-size: 1.8rem;
 		}
 
-		.mision__info {
+		.mission__info {
 			padding: 30px 0;
 		}
 
-		.mision__title {
+		.mission__title {
 			font-size: 1.8rem;
 			line-height: 1.4;
 			letter-spacing: -1px;
@@ -162,14 +162,14 @@
 		}
 	}
 
-	.about-mision__column {
+	.about-mission__column {
 		padding: 0 0.5rem;
 
 		.about__info {
 			padding: 1.5rem 0;
 		}
 
-		.mision__info {
+		.mission__info {
 			padding: 2rem 0;
 		}
 
@@ -180,7 +180,7 @@
 }
 
 @media (max-width: 427px) {
-	.about-mision__column {
+	.about-mission__column {
 		padding: 2rem .5rem;
 	}
 }
