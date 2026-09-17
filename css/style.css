@@ -695,37 +695,37 @@ img {
 }
 
 @media (max-width: 1131px) {
-  .about-mision {
+  .about-mission {
     margin: 80px 0 0 0;
   }
-  .about-mision__column {
+  .about-mission__column {
     flex-wrap: wrap;
     padding: 0 2rem;
     gap: 0;
     flex-direction: column-reverse;
   }
-  .about-mision__column .about__info {
+  .about-mission__column .about__info {
     padding: 3rem 0;
   }
-  .about-mision__column .sub-title {
+  .about-mission__column .sub-title {
     font-size: 0.8rem;
     padding: 0 0 0.7rem 0;
   }
-  .about-mision__column .about__title {
+  .about-mission__column .about__title {
     padding: 0 0 0.7rem 0;
   }
-  .about-mision__column .title {
+  .about-mission__column .title {
     font-size: 1.8rem;
   }
-  .about-mision__column .mision__info {
+  .about-mission__column .mission__info {
     padding: 30px 0;
   }
-  .about-mision__column .mision__title {
+  .about-mission__column .mission__title {
     font-size: 1.8rem;
     line-height: 1.4;
     letter-spacing: -1px;
   }
-  .about-mision__column .more-link {
+  .about-mission__column .more-link {
     padding: 2rem 0 0 0;
     font-size: 1.2rem;
   }
@@ -740,21 +740,21 @@ img {
   .line_decor::after {
     top: -1rem;
   }
-  .about-mision__column {
+  .about-mission__column {
     padding: 0 0.5rem;
   }
-  .about-mision__column .about__info {
+  .about-mission__column .about__info {
     padding: 1.5rem 0;
   }
-  .about-mision__column .mision__info {
+  .about-mission__column .mission__info {
     padding: 2rem 0;
   }
-  .about-mision__column .more-link {
+  .about-mission__column .more-link {
     padding: 1rem 0 0 0;
   }
 }
 @media (max-width: 427px) {
-  .about-mision__column {
+  .about-mission__column {
     padding: 2rem 0.5rem;
   }
 }
@@ -962,7 +962,7 @@ img {
 }
 
 @media (max-width: 769px) {
-  .mision__title {
+  .mission__title {
     font-size: 1.8rem;
   }
 }
