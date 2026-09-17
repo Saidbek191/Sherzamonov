@@ -51,11 +51,11 @@ const left = {
 		updateLeft(posts[0]);
 
 		
-		let currentLang = localStorage.getItem('leng') || "en";
+		let currentLang = localStorage.getItem('lang') || "en";
 			
 		async function changeLanguage(lang, button) {
 			// Снимаем класс "active" со всех кнопок
-			document.querySelectorAll('.leng__switch').forEach(btn =>	btn.classList.remove('active'));
+			document.querySelectorAll('.lang__switch').forEach(btn =>	btn.classList.remove('active'));
 			// Добавляем "active" к нажатой кнопке
 			button?.classList.add('active');
 			
@@ -70,7 +70,7 @@ const left = {
 					else el.textContent = translations[key];
 		});
 		
-		localStorage.setItem('leng', lang);
+		localStorage.setItem('lang', lang);
 		currentLang = lang;
 		loadArticle(lang);
 	} catch	(error) {
@@ -78,11 +78,11 @@ const left = {
 	}
 }
 
-	document.querySelectorAll('.leng__switch').forEach(btn => {
-		btn.addEventListener('click', () => changeLanguage(btn.dataset.leng, btn));
+	document.querySelectorAll('.lang__switch').forEach(btn => {
+		btn.addEventListener('click', () => changeLanguage(btn.dataset.lang, btn));
 	});
 
-		const btn = document.querySelector(`.leng__switch[data-leng="${currentLang}"]`);
+		const btn = document.querySelector(`.lang__switch[data-leng="${currentLang}"]`);
 		changeLanguage(currentLang, btn);
 		
 		
