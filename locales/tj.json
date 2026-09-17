@@ -1,8 +1,8 @@
 {
-	"homeNav": "<a href=\"./index.html\">Асос</a>",
-	"blogNav": "<a href=\"./blog.html\">Блог</a>",
-	"aboutNav": "<a href=\"./about-me.html\">Дар бораи ман</a>",
-	"contactNav": "<a href=\"./contact.html\">Тамос</a>",
+	"homeNav": "Асос",
+	"blogNav": "Блог",
+	"aboutNav": "Дар бораи ман",
+	"contactNav": "Тамос",
 	"homeSubText": "Дар <span>радиои Озодӣ</span> нашр шудааст",
 	"homeTitleText": "Дар қудрат дарозтар бошад,<br /> тарс бештар мешавад.",
 	"homeDateText": "Аз ҷониби <span>Алим Шерзамонов</span> | 29 июни соли 2024",

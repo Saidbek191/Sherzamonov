@@ -1,8 +1,8 @@
 {
-	"homeNav": "<a href=\"./index.html\">Home</a>",
-	"blogNav": "<a href=\"./blog.html\">Blog</a>",
-	"aboutNav": "<a href=\"./about-me.html\">About Me</a>",
-	"contactNav": "<a href=\"./contact.html\">Contact</a>",
+	"homeNav": "Home",
+	"blogNav": "Blog",
+	"aboutNav": "About Me",
+	"contactNav": "Contact",
 	"homeSubText": "Posted on <span>Radio Liberty</span>",
 	"homeTitleText": "Longer in power,<br /> greater the fears.",
 	"homeDateText": "By <span>Alim Sherzamonov</span> | June 29, 2024",

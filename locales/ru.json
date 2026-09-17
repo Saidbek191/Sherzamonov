@@ -1,8 +1,8 @@
 {
-	"homeNav": "<a href=\"./index.html\">Главное</a>",
-	"blogNav": "<a href=\"./blog.html\">Блог</a>",
-	"aboutNav": "<a href=\"./about-me.html\">Обо мне</a>",
-	"contactNav": "<a href=\"./contact.html\">Контакт</a>",
+	"homeNav": "Главное",
+	"blogNav": "Блог",
+	"aboutNav": "Обо мне",
+	"contactNav": "Контакт",
 	"homeSubText": "Опубликовано на <span>радио «Свобода»</span>",
 	"homeTitleText": "Дольше у власти,<br /> больше опасений.",
 	"homeDateText": "<span>Алим Шерзамонов</span> | 29 июня 2024 г.",
