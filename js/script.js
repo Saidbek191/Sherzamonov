@@ -82,7 +82,7 @@ const left = {
 		btn.addEventListener('click', () => changeLanguage(btn.dataset.lang, btn));
 	});
 
-		const btn = document.querySelector(`.lang__switch[data-leng="${currentLang}"]`);
+		const btn = document.querySelector(`.lang__switch[data-lang="${currentLang}"]`);
 		changeLanguage(currentLang, btn);
 		
 		
