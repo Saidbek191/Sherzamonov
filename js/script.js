@@ -72,7 +72,7 @@ const left = {
 		
 		localStorage.setItem('leng', lang);
 		currentLang = lang;
-
+		loadArticle(lang);
 	} catch	(error) {
 		console.error('Ошибка загрузки перевода:', error);
 	}
@@ -136,12 +136,15 @@ function markdownToHtml(md) {
 	.replace(/\n/gim, '<br>');
 }
 
-			const articleContainer = document.getElementById("article-container");
-			if (articleContainer) {
-				const currentArticlesSlug = articleContainer.dataset.slug;
-				fetch(`articles/${currentArticlesSlug}/${currentLang}.md`)
-				.then(res => res.ok ? res.text() : Promise.reject("File missing"))
-				.then(md =>	articleContainer.innerHTML = markdownToHtml(md))
-				.catch(() => articleContainer.innerHTML =	`<p>Перевод для языка "${currentLang}" недоступен.</p>`);	
-			}
+function loadArticle (lang) {
+
+	const articleContainer = document.getElementById("article-container");
+	if (articleContainer) {
+		const currentArticlesSlug = articleContainer.dataset.slug;
+		fetch(`articles/${currentArticlesSlug}/${lang}.md`)
+		.then(res => res.ok ? res.text() : Promise.reject("File missing"))
+		.then(md =>	articleContainer.innerHTML = markdownToHtml(md))
+		.catch(() => articleContainer.innerHTML =	`<p>Перевод для языка "${lang}" недоступен.</p>`);	
+	}
+}
 		});
