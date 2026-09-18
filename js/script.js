@@ -9,19 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.body.classList.toggle('lock');
 	});
 
-
-
- // Получаем текущий путь
-  const currentPath = window.location.pathname.split('/').pop();
-
-  // Получаем все ссылки с классом nav-link
-  document.querySelectorAll('.head__link a').forEach(link => {
-    // Если путь ссылки совпадает с текущим
-		const href = link.getAttribute('href').split('/').pop();
-    if (href === currentPath) link.classList.add('active');
-  });
-
-
 	// CARUSEL
 
 	const posts = document.querySelectorAll('.post-box');
