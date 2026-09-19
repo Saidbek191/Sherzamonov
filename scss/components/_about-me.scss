@@ -224,7 +224,12 @@ img {
 	}
 }
 
-.our-mission__body {}
+.our-mission__body {
+	flex: 0 0 60%;
+	@media (max-width: 769px) {
+		flex: 0 0 100%;
+	}
+}
 
 .mission__sub {}
 
@@ -236,13 +241,27 @@ img {
 	}
 }
 
+.mission__list, .vision__list {
+	padding-left: 20px;
+}
+
+.mission__item, .vision__item {
+	list-style: disc;
+  margin-bottom: 8px;
+}
+
 .title {}
 
 .mission__text {}
 
 .text {}
 
-.our-vision__body {}
+.our-vision__body {
+	flex: 0 0 40%;
+	@media (max-width: 769px) {
+		flex: 0 0 100%;
+	}
+}
 
 .vision__sub {}
 

@@ -302,7 +302,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  padding: 13rem 0 0 2rem;
+  padding: 24rem 0 0 2rem;
   color: #fff;
 }
 
@@ -961,9 +961,36 @@ img {
   }
 }
 
+.our-mission__body {
+  flex: 0 0 60%;
+}
+@media (max-width: 769px) {
+  .our-mission__body {
+    flex: 0 0 100%;
+  }
+}
+
 @media (max-width: 769px) {
   .mission__title {
     font-size: 1.8rem;
+  }
+}
+
+.mission__list, .vision__list {
+  padding-left: 20px;
+}
+
+.mission__item, .vision__item {
+  list-style: disc;
+  margin-bottom: 8px;
+}
+
+.our-vision__body {
+  flex: 0 0 40%;
+}
+@media (max-width: 769px) {
+  .our-vision__body {
+    flex: 0 0 100%;
   }
 }
 
