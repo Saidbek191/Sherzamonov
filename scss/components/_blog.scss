@@ -14,7 +14,7 @@ body {
 .blog__header {
   background-color: v.$lavender;
   padding: 5.7rem 0;
-  @media (max-width: 375px) {
+  @media (max-width: v.$bp-phone) {
     padding: 3.7rem 0 0 0;
   }
 }
@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   gap: 8rem;
-  @media (max-width: 375px) {
+  @media (max-width: v.$bp-phone) {
     gap: 4px;
   }
 }
@@ -36,7 +36,7 @@ body {
   // flex: 1 1 auto;
   gap: 16px;
   padding: 5.7rem 0 0 0;
-  @media (max-width: 375px) {
+  @media (max-width: v.$bp-phone) {
     padding: 3.7rem 0 0 0;
     gap: 6px;
   }
@@ -52,6 +52,9 @@ body {
   line-height: 1.4;
   letter-spacing: -2px;
   color: v.$black;
+  @media (max-width: v.$bp-phone) {
+    font-size: 2rem;
+  }
 }
 
 .blog-date {
@@ -87,7 +90,7 @@ body {
 
 .cards {
   padding: 4.5rem 0;
-  @media (max-width: 375px) {
+  @media (max-width: v.$bp-phone) {
     padding: 3rem 0 0 0;
   }
 }
@@ -196,7 +199,7 @@ body {
       color: v.$black;
     }
   }
-  @media (max-width: 375px) {
+  @media (max-width: v.$bp-phone) {
     padding: 2rem 0;
   }
 }

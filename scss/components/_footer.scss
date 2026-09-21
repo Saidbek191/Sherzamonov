@@ -12,7 +12,7 @@ a {
 .footer__body {
   padding: 3.2rem 0;
   font-family: v.$fontFamily;
-  @media (max-width: 375px) {
+  @media (max-width: v.$bp-phone) {
     padding: 0;
   }
 }
@@ -33,7 +33,7 @@ a {
   letter-spacing: -2px;
   color: v.$light;
   padding: 5rem 4rem;
-  @media (max-width: 426px) {
+  @media (max-width: v.$bp-phone) {
     font-size: 1.5rem;
     padding: 4.5rem 3rem;
     letter-spacing: 0px;
@@ -120,10 +120,10 @@ input {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: v.$bp-phone) {
   .footer__contacts {
     flex-direction: column;
-    // align-items: ;
+    margin: 20px 0;
     text-align: center;
     gap: 20px;
   }

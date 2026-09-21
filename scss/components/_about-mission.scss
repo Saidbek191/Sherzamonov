@@ -62,13 +62,16 @@
   letter-spacing: -2px;
   color: v.$black;
   padding: 0 0 16px 0;
+  @media (max-width: v.$bp-phone) {
+    font-size: 30px;
+  }
 }
 
 .text {
   font-family: v.$fontFamily;
   line-height: 2;
   color: v.$mediumGrey;
-  padding-inline: 2rem;
+  // padding-inline: 2rem;
 }
 
 .columns__more {
@@ -177,7 +180,7 @@
   }
 }
 
-@media (max-width: 427px) {
+@media (max-width: v.$bp-phone) {
   .about-mission__column {
     padding: 2rem 0.5rem;
   }

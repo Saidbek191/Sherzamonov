@@ -115,7 +115,7 @@ header {
     top: 50px;
     right: 3%;
   }
-  @media (max-width: 425px) {
+  @media (max-width: v.$bp-phone) {
     button {
       border: none;
       padding: 0.4rem 0.2rem;
@@ -234,11 +234,6 @@ header {
   }
 }
 
-// @media (max-width: 564px) {
-// 	.head-nav__logo {
-// 		font-size: 1.5rem;
-// 	}
-// }
 @media (max-width: v.$bp-phone) {
   .head__nav {
     display: none;
