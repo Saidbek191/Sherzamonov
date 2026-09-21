@@ -2,7 +2,7 @@
 /* RESETS */
 @import url("https://fonts.googleapis.com/css?family=Inter:regular,500,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Sen:700&display=swap");
-/* VARIABELS */
+/* VARIABLES */
 /* =============================== */
 /* FONTS */
 /* ================================ */
@@ -528,7 +528,7 @@ header::before {
   color: inherit;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1023px) {
   .title {
     font-size: 2rem;
     line-height: px0;
@@ -807,7 +807,7 @@ header::before {
   align-items: center;
   gap: 5rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .about-me__row {
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -821,7 +821,7 @@ header::before {
   text-align: left;
   flex: 0 0 50%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .about-me__item-info {
     flex: 0 0 80%;
   }
@@ -849,7 +849,7 @@ img {
 .second-block {
   padding: 8rem 0 0 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .second-block {
     padding: 5rem 0 0 0;
   }
@@ -860,7 +860,7 @@ img {
   align-items: center;
   gap: 4rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .second-block__row {
     flex-wrap: wrap;
     justify-content: center;
@@ -877,7 +877,7 @@ img {
   flex-direction: column;
   flex: 0 0 50%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .second-block__item-info {
     flex: 0 0 80%;
   }
@@ -899,14 +899,14 @@ img {
   right: -8%;
   position: relative;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .team-box {
     padding: 2.5rem;
     right: -3%;
     gap: 20px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .team-box {
     padding: 2.5rem;
     right: -3%;
@@ -920,7 +920,7 @@ img {
     padding: 0 1.2rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .team-box .team__title {
     font-size: 2rem;
   }
@@ -946,7 +946,7 @@ img {
   gap: 32px;
   margin: 0 0 128px 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .info-about-team {
     padding: 40px 20px;
     gap: 20px;

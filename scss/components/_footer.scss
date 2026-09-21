@@ -101,7 +101,7 @@ input {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: v.$bp-tablet) {
   .footer__donation {
     flex-direction: column;
     align-items: center;

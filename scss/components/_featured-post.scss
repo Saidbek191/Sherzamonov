@@ -136,7 +136,7 @@
 
 // Responsive design
 
-@media (max-width: 899px) {
+@media (max-width: v.$bp-tablet) {
   .title {
     font-size: 2rem;
     line-height: px0;
