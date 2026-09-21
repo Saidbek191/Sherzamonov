@@ -4,7 +4,7 @@ A multilingual website for a civil society organization "Forum of Tajik Freethin
 
 Live demo: https://saidbek191.github.io/Sherzamonov/
 
-![Home page]("https://github.com/user-attachments/assets/683d99a8-ab7c-427b-b803-4e1067f2df43" />)
+![Home page](https://github.com/user-attachments/assets/683d99a8-ab7c-427b-b803-4e1067f2df43)
 
 ## Features
 
