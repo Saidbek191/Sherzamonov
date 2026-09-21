@@ -1,4 +1,4 @@
-## The Country of the Eternal Rahmon: Transit in Tajikistan is Suspended
+# The Country of the Eternal Rahmon: Transit in Tajikistan is Suspended
 
 On October 11, Tajikistan will hold its next presidential election: Emomali Rahmon intends to become head of state for the fifth time. In fact, he has been in power since November 1992, making him one of the world’s longest-serving political leaders (only four African politicians have been in power longer). Earlier this year, many experts speculated that Rahmon planned to formally transfer the reins of power to his son, Rustam Emomali, especially since in 2016 the presidential age requirement was lowered from 35 to 30 years — supposedly for Rustam’s benefit. However, something went wrong, and Rahmon’s son did not run in this election. According to opposition political émigré Alim Sherzamonov, the reason lies in internal contradictions within the ruling clan.
 

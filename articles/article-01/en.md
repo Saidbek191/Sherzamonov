@@ -1,4 +1,4 @@
-## Tajikistan Enters the Phase of a Family Power Transition
+# Tajikistan Enters the Phase of a Family Power Transition
 
 Rustam Emomali, the mayor of Dushanbe and son of the president of Tajikistan, has been nominated as a candidate for the city council. The voting will take place on March 1 — the same day as the elections to the lower house of parliament — and on March 27 the elections to the upper house will follow. This electoral cycle will conclude in November with the presidential elections. In my view, all these events are parts of one chain. The country is unfolding its own Tajik scenario of a power transition — carefully planned and meticulously executed.
 

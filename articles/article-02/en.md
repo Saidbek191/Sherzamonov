@@ -1,4 +1,4 @@
-## Crackdown in Gorno-Badakhshan.
+# Crackdown in Gorno-Badakhshan.
 
 The security crackdown that the Pamiris of east Tajikistan have nervously been expecting for months finally arrived this week, claiming at least 10 lives already. Many expect the toll to grow by the time the shooting has died down.
 

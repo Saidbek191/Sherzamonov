@@ -61,6 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("lang", lang);
       currentLang = lang;
       loadArticle(lang);
+      let htmlLang = lang;
+      if(lang === "tj") {
+        htmlLang = "tg";
+      }
+      document.documentElement.lang = htmlLang;
     } catch (error) {
       console.error("Ошибка загрузки перевода:", error);
     }
