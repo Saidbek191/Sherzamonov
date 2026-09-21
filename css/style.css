@@ -7,6 +7,7 @@
 /* FONTS */
 /* ================================ */
 /*  IMPORT__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +18,11 @@
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 2px solid #592ea9;
+  outline-offset: 2px;
 }
 
 nav,
@@ -1545,10 +1551,6 @@ body {
   font-family: "Sen", sans-serif;
   font-weight: 600;
   line-height: 1.6;
-}
-
-.form * {
-  outline: none;
 }
 
 .form {
