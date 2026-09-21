@@ -1,4 +1,4 @@
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 /* RESETS */
 @import url("https://fonts.googleapis.com/css?family=Inter:regular,500,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Sen:700&display=swap");
@@ -6,8 +6,78 @@
 /* =============================== */
 /* FONTS */
 /* ================================ */
-/*  IIMPOR__SCSS__FILES  */
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input ::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* ================================== */
+/* IMPORT__FONTS */
+/* ==================================================== */
+/*  IMPORT__SCSS__FILES  */
 header {
   background-color: #232536;
   font-family: "Inter", sans-serif;
@@ -216,77 +286,7 @@ header::before {
   }
 }
 /* ========================================= */
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input ::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button ::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a :hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-/* ================================== */
-/* IMPORT__FONTS */
-/* ==================================================== */
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 .home {
   font-family: "Inter", sans-serif;
   background: url(../images/home/bg1.jpg);
@@ -394,7 +394,7 @@ img {
     font-size: 0.8rem;
   }
 }
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 .featured-post {
   font-family: "Sen", sans-serif;
   margin: 128px 0 0 0;
@@ -583,7 +583,7 @@ img {
     margin: 1rem 0 1rem 0.5rem;
   }
 }
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 .about-mission {
   top: 0;
   left: 0;
@@ -764,7 +764,7 @@ img {
     padding: 2rem 0.5rem;
   }
 }
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 .about-me {
   margin: 8rem 0 0 0;
 }
@@ -1046,7 +1046,7 @@ img {
     padding: 2rem 0.5rem;
   }
 }
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 .footer {
   background-color: #232536;
 }
@@ -1168,7 +1168,7 @@ input::placeholder {
     gap: 20px;
   }
 }
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 body {
   display: flex;
   flex-direction: column;
@@ -1394,7 +1394,7 @@ body {
     text-align: left;
   }
 }
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 .blog-post {
   margin: 128px 0;
 }
@@ -1447,7 +1447,7 @@ body {
 .what-next .what-next__body-row .next__title {
   padding: 16px 0;
 }
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 .wrapper {
   position: relative;
 }
