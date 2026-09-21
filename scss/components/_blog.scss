@@ -1,112 +1,105 @@
-@use '../base/variables' as v;
-
+@use "../base/variables" as v;
 
 body {
-	display: flex;
-	flex-direction: column
+  display: flex;
+  flex-direction: column;
 }
-
 
 .wrapper {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-
 
 // BLOG SECTION
 
 .blog__header {
-	background-color: v.$lavender;
-	padding: 5.7rem 0;
-	@media (max-width: 375px) {
-		padding: 3.7rem 0 0 0;
-	}
+  background-color: v.$lavender;
+  padding: 5.7rem 0;
+  @media (max-width: 375px) {
+    padding: 3.7rem 0 0 0;
+  }
 }
 
 .blog__header-body {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	gap: 8rem;
-	@media (max-width: 375px) {
-		gap: 4px;
-	}
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 8rem;
+  @media (max-width: 375px) {
+    gap: 4px;
+  }
 }
 
 .blog-info {
-	color: v.$black;
-	display: flex;
-	flex-direction: column;
-	// flex: 1 1 auto;
-	gap: 16px;
-	padding: 5.7rem 0 0 0;
-	@media (max-width: 375px) {
-		padding: 3.7rem 0 0 0;
-		gap: 6px;
-	}
+  color: v.$black;
+  display: flex;
+  flex-direction: column;
+  // flex: 1 1 auto;
+  gap: 16px;
+  padding: 5.7rem 0 0 0;
+  @media (max-width: 375px) {
+    padding: 3.7rem 0 0 0;
+    gap: 6px;
+  }
 }
 
 .blog-sub {
-	font-family: v.$fontFamily;
-	padding: 0;
+  font-family: v.$fontFamily;
+  padding: 0;
 }
 
 .blog-title {
-	font-size: 2.5rem;
-	line-height: 1.4;
-	letter-spacing: -2px;
-	color: v.$black;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  letter-spacing: -2px;
+  color: v.$black;
 }
 
 .blog-date {
-	padding: 0;
+  padding: 0;
 }
 
 .blog-date {
-	font-family: v.$fontFamily;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1;
+  font-family: v.$fontFamily;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
 
-	span {
-		color: v.$purple;
-	}
+  span {
+    color: v.$purple;
+  }
 }
 
 .blog-text {
-	font-family: v.$fontFamily;
-	color: v.$mediumGrey;
+  font-family: v.$fontFamily;
+  color: v.$mediumGrey;
 }
-
 
 .blog__img {
-	img {
-		max-width: 36.7rem;
-		width: 100%;
-		flex: 1 1 50%;
-		padding: 0;
-	}
+  img {
+    max-width: 36.7rem;
+    width: 100%;
+    flex: 1 1 50%;
+    padding: 0;
+  }
 }
-
-
 
 // CARDS SECTION
 
 .cards {
-	padding: 4.5rem 0;
-	@media (max-width: 375px) {
-		padding: 3rem 0 0 0;
-	}
+  padding: 4.5rem 0;
+  @media (max-width: 375px) {
+    padding: 3rem 0 0 0;
+  }
 }
 
-
 .simple-line {
-	span {
-		width: 100%;
-		height: 2px;
-		border-bottom: 2px solid v.$lightGrey;
-		padding: 2.2rem 0 0 0;
-		display: block;
-	}
+  span {
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid v.$lightGrey;
+    padding: 2.2rem 0 0 0;
+    display: block;
+  }
 }
 
 .carousel-wrapper {
@@ -115,9 +108,9 @@ body {
 }
 
 .cards__body {
-	padding: 4.5rem 0 0 0;
-	overflow: hidden;
-	position: relative;
+  padding: 4.5rem 0 0 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .carousel-track {
@@ -128,121 +121,118 @@ body {
 }
 
 .cards__row {
-	flex: 0 0 50%;
-	display: flex;
-	align-items: center;
-	gap: 2.2rem;
-	box-sizing: border-box;
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  box-sizing: border-box;
 }
 
 .blog__img {
-	width: 100%;
-	max-width: 35rem;
-	flex: 1 1 50%;
+  width: 100%;
+  max-width: 35rem;
+  flex: 1 1 50%;
 }
 
 .cards__info {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
-
 .subtitle-card {
-	color: v.$purple;
-	font-family: v.$fontFamily;
-	font-size: 1.1rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	line-height: 1;
-	letter-spacing: 3px;
-	padding: 0 0 1.4rem 0;
+  color: v.$purple;
+  font-family: v.$fontFamily;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 3px;
+  padding: 0 0 1.4rem 0;
 }
 
 .title-card {
-	color: v.$black;
-	font-family: v.$secondFont;
-	line-height: 1.3;
-	letter-spacing: -2px;
-	font-size: 2.5rem;
-	font-weight: 600;
-	padding: 0 0 1.1rem 0;
+  color: v.$black;
+  font-family: v.$secondFont;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 0 0 1.1rem 0;
 }
 
 .cards__text {
-	color: v.$mediumGrey;
-	font-family: v.$fontFamily;
-	font-weight: 400;
-	font-size: 1.1rem;
-	line-height: 1.8;
+  color: v.$mediumGrey;
+  font-family: v.$fontFamily;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-
 .corusel {
-	display: flex;
-	justify-content: center;
-	gap: 1.2rem;
-	padding: 4.5rem 0 0 0;
-	color: v.$mediumGrey;
-	font-size: 1.2rem;
-	font-weight: 500;
-	line-height: 1.5;
-	font-family: v.$secondFont;
-	cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 4.5rem 0 0 0;
+  color: v.$mediumGrey;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: v.$secondFont;
+  cursor: pointer;
 
-	.pre {
-		transition: all .2s ease .0s;
+  .pre {
+    transition: all 0.2s ease 0s;
 
-		&:hover {
-			transform: scale(1.1);
-			color: v.$black;
-		}
-	}
+    &:hover {
+      transform: scale(1.1);
+      color: v.$black;
+    }
+  }
 
-	.nex {
-		transition: all .2s ease .0s;
+  .nex {
+    transition: all 0.2s ease 0s;
 
-		&:hover {
-			transform: scale(1.1);
-			color: v.$black;
-		}
-	}
-	@media (max-width: 375px) {
-		padding: 2rem 0;
-	}
+    &:hover {
+      transform: scale(1.1);
+      color: v.$black;
+    }
+  }
+  @media (max-width: 375px) {
+    padding: 2rem 0;
+  }
 }
 
 @media (max-width: 1288px) {
-	.blog__header-body {
-		margin-inline: 1.4rem;
-		align-items: center;
-	}
+  .blog__header-body {
+    margin-inline: 1.4rem;
+    align-items: center;
+  }
 
-	.cards__row {}
+  .cards__row {
+  }
 }
 
 @media (max-width: 768px) {
-	.blog__header-body {
-		flex-direction: column-reverse;
-		align-items: center;
-		gap: 4px;
-		padding: 2.8rem 0 0 0;
-	}
+  .blog__header-body {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4px;
+    padding: 2.8rem 0 0 0;
+  }
 
-	.cards__title,
-	.cards__sub,
-	.cards__text {
-		margin-inline: 1.4rem;
-		text-align: left;
+  .cards__title,
+  .cards__sub,
+  .cards__text {
+    margin-inline: 1.4rem;
+    text-align: left;
+  }
 
-	}
+  .cards__title {
+    font-size: 2rem;
+  }
 
-	.cards__title {
-		font-size: 2rem;
-	}
-
-
-	.cards__row {
-		flex-direction: column;
-		align-items: center;
-		text-align: left;
-	}
+  .cards__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
 }

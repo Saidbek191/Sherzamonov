@@ -1,186 +1,184 @@
-@use '../base/variables' as v;
-@use '../modules/mixins' as m;
+@use "../base/variables" as v;
+@use "../modules/mixins" as m;
 
 .about-mission {
-	top: 0;
-	left: 0;
-	margin: 8rem 0 0 0;
+  top: 0;
+  left: 0;
+  margin: 8rem 0 0 0;
 }
 
 .line_decor {
-	@include m.line();
+  @include m.line();
 }
 
 .about-mission__body {
-	display: flex;
-	justify-content: space-between;
-	background-color: v.$lavender;
+  display: flex;
+  justify-content: space-between;
+  background-color: v.$lavender;
 
-	&.sub-title {
-		display: flex;
-		justify-content: space-between;
-	}
+  &.sub-title {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .about-mission__column {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
 }
 
 .about__info {
-	display: flex;
-	flex-direction: column;
-	padding: 96px 0 96px 80px;
-	flex: 1 1 auto;
-	a {
-		color: v.$purple;
-	}
+  display: flex;
+  flex-direction: column;
+  padding: 96px 0 96px 80px;
+  flex: 1 1 auto;
+  a {
+    color: v.$purple;
+  }
 }
 
 .sub-title {
-	font-size: 16px;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-family: v.$fontFamily;
-	padding: 0 0 24px 0;
-	color: v.$black;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: v.$fontFamily;
+  padding: 0 0 24px 0;
+  color: v.$black;
 }
 
 .about__title {
-	display: block;
-	padding: 0 0 26px 0;
+  display: block;
+  padding: 0 0 26px 0;
 }
 
 .title {
-	display: block;
-	font-family: v.$secondFont;
-	line-height: 1.2;
-	font-size: 36px;
-	letter-spacing: -2px;
-	color: v.$black;
-	padding: 0 0 16px 0;
+  display: block;
+  font-family: v.$secondFont;
+  line-height: 1.2;
+  font-size: 36px;
+  letter-spacing: -2px;
+  color: v.$black;
+  padding: 0 0 16px 0;
 }
 
 .text {
-	font-family: v.$fontFamily;
-	line-height: 2;
-	color: v.$mediumGrey;
-	padding-inline: 2rem;
+  font-family: v.$fontFamily;
+  line-height: 2;
+  color: v.$mediumGrey;
+  padding-inline: 2rem;
 }
 
 .columns__more {
-	align-content: flex-start;
+  align-content: flex-start;
 }
 
 .mission__info {
-	display: flex;
-	flex-direction: column;
-	flex: 1 1 auto;
-	padding: 98px 108px 138px 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 98px 108px 138px 0;
 }
 
 .mission__title {
-	font-size: 28px;
-	line-height: 1.2;
-	letter-spacing: -1px;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -1px;
 }
 
-
 .more-link {
-	display: block;
-	font-family: v.$secondFont;
-	padding: 40px 0 0 0;
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 1.3;
+  display: block;
+  font-family: v.$secondFont;
+  padding: 40px 0 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 // RESPONSIVE FOR TABLET & PHONE
 
 @media (max-width: 1131px) {
-	.about-mission {
-		margin: 80px 0 0 0;
-	}
+  .about-mission {
+    margin: 80px 0 0 0;
+  }
 
-	.about-mission__column {
-		flex-wrap: wrap;
-		padding: 0 2rem;
-		gap: 0;
-		flex-direction: column-reverse;
+  .about-mission__column {
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    gap: 0;
+    flex-direction: column-reverse;
 
-		.about__info {
-			padding: 3rem 0;
-		}
+    .about__info {
+      padding: 3rem 0;
+    }
 
-		.sub-title {
-			font-size: .8rem;
-			padding: 0 0 .7rem 0;
-		}
+    .sub-title {
+      font-size: 0.8rem;
+      padding: 0 0 0.7rem 0;
+    }
 
-		.about__title {
-			padding: 0 0 .7rem 0;
-		}
+    .about__title {
+      padding: 0 0 0.7rem 0;
+    }
 
-		.title {
-			font-size: 1.8rem;
-		}
+    .title {
+      font-size: 1.8rem;
+    }
 
-		.mission__info {
-			padding: 30px 0;
-		}
+    .mission__info {
+      padding: 30px 0;
+    }
 
-		.mission__title {
-			font-size: 1.8rem;
-			line-height: 1.4;
-			letter-spacing: -1px;
-		}
+    .mission__title {
+      font-size: 1.8rem;
+      line-height: 1.4;
+      letter-spacing: -1px;
+    }
 
-		.more-link {
-			padding: 2rem 0 0 0;
-			font-size: 1.2rem;
-		}
-	}
+    .more-link {
+      padding: 2rem 0 0 0;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-	.line_decor {
+  .line_decor {
+    &::before,
+    &::after {
+      height: 1rem;
+    }
 
-		&::before,
-		&::after {
-			height: 1rem;
-		}
+    &::before {
+      top: -1rem;
+    }
 
-		&::before {
-			top: -1rem;
-		}
+    &::after {
+      top: -1rem;
+    }
+  }
 
-		&::after {
-			top: -1rem;
-		}
-	}
+  .about-mission__column {
+    padding: 0 0.5rem;
 
-	.about-mission__column {
-		padding: 0 0.5rem;
+    .about__info {
+      padding: 1.5rem 0;
+    }
 
-		.about__info {
-			padding: 1.5rem 0;
-		}
+    .mission__info {
+      padding: 2rem 0;
+    }
 
-		.mission__info {
-			padding: 2rem 0;
-		}
-
-		.more-link {
-			padding: 1rem 0 0 0;
-		}
-	}
+    .more-link {
+      padding: 1rem 0 0 0;
+    }
+  }
 }
 
 @media (max-width: 427px) {
-	.about-mission__column {
-		padding: 2rem .5rem;
-	}
+  .about-mission__column {
+    padding: 2rem 0.5rem;
+  }
 }

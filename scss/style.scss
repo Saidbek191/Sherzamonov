@@ -1,21 +1,20 @@
 /*  IIMPOR__SCSS__FILES  */
 
-@use './base/variables' as v;
-@use './modules/mixins' as m;
-@use './components/header';
-@use './reset';
-@use './components/home';
-@use './components/featured-post';
-@use './components/about-mission';
-@use './components/about-me';
-@use './components/footer';
-@use './components/blog';
-@use './components/blog-post';
-@use './components/contact';
+@use "./base/variables" as v;
+@use "./modules/mixins" as m;
+@use "./components/header";
+@use "./reset";
+@use "./components/home";
+@use "./components/featured-post";
+@use "./components/about-mission";
+@use "./components/about-me";
+@use "./components/footer";
+@use "./components/blog";
+@use "./components/blog-post";
+@use "./components/contact";
 
 // container 1440px
 .container {
-	max-width: v.$maxWidth;
-	margin: 0 auto
+  max-width: v.$maxWidth;
+  margin: 0 auto;
 }
-
