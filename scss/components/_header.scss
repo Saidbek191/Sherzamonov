@@ -110,7 +110,7 @@ header {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: v.$bp-phone) {
     position: absolute;
     top: 50px;
     right: 3%;
@@ -126,7 +126,7 @@ header {
 }
 
 /* RESPONSIVE FOR TABLET & PHONE */
-@media (max-width: 768px) {
+@media (max-width: v.$bp-phone) {
   body.lock {
     overflow: hidden;
   }
@@ -239,7 +239,7 @@ header {
 // 		font-size: 1.5rem;
 // 	}
 // }
-@media (max-width: 768px) {
+@media (max-width: v.$bp-phone) {
   .head__nav {
     display: none;
   }

@@ -211,7 +211,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: v.$bp-phone) {
   .blog__header-body {
     flex-direction: column-reverse;
     align-items: center;

@@ -549,7 +549,7 @@ header::before {
     padding: 0 0 0 0.5rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .row__title-box {
     padding: 0;
   }
@@ -736,7 +736,7 @@ header::before {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .line_decor::before, .line_decor::after {
     height: 1rem;
   }
@@ -953,7 +953,7 @@ img {
     margin: 0 0 80px 0;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .info-about-team {
     flex-wrap: wrap;
     align-items: center;
@@ -970,13 +970,13 @@ img {
 .our-mission__body {
   flex: 0 0 60%;
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .our-mission__body {
     flex: 0 0 100%;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .mission__title {
     font-size: 1.8rem;
   }
@@ -996,19 +996,19 @@ img {
 .our-vision__body {
   flex: 0 0 40%;
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .our-vision__body {
     flex: 0 0 100%;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .vision__title {
     font-size: 1.8rem;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .about-me {
     margin: 2rem 0 2rem 0.5rem;
   }
