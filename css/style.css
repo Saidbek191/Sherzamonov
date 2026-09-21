@@ -275,7 +275,7 @@ header::before {
 }
 /* =========================================== */
 /* SOME BRAKE POINTS */
-@media (max-width: 1289px) {
+@media (max-width: 1439px) {
   .head {
     padding: 0 1.4rem;
   }
@@ -306,7 +306,7 @@ header::before {
   padding: 24rem 0 0 2rem;
   color: #fff;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1439px) {
   .home__info {
     padding: 12rem 0 0 2rem;
   }
@@ -699,7 +699,7 @@ header::before {
   line-height: 1.3;
 }
 
-@media (max-width: 1131px) {
+@media (max-width: 1439px) {
   .about-mission {
     margin: 80px 0 0 0;
   }
@@ -1382,7 +1382,7 @@ body {
   }
 }
 
-@media (max-width: 1288px) {
+@media (max-width: 1439px) {
   .blog__header-body {
     margin-inline: 1.4rem;
     align-items: center;

@@ -204,7 +204,7 @@ body {
   }
 }
 
-@media (max-width: 1288px) {
+@media (max-width: v.$bp-laptop) {
   .blog__header-body {
     margin-inline: 1.4rem;
     align-items: center;

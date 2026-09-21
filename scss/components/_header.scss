@@ -228,7 +228,7 @@ header {
 /* =========================================== */
 
 /* SOME BRAKE POINTS */
-@media (max-width: 1289px) {
+@media (max-width: v.$bp-laptop) {
   .head {
     padding: 0 1.4rem;
   }

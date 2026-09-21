@@ -102,7 +102,7 @@
 
 // RESPONSIVE FOR TABLET & PHONE
 
-@media (max-width: 1131px) {
+@media (max-width: v.$bp-laptop) {
   .about-mission {
     margin: 80px 0 0 0;
   }
