@@ -1109,7 +1109,6 @@ input {
   border: 2px solid #6d6e76;
   padding: 0.8rem 10rem 0.8rem 1.5rem;
   background-color: transparent;
-  outline: none;
 }
 .donation__input::-moz-placeholder, input::-moz-placeholder {
   color: #6d6e76;
