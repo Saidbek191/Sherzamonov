@@ -136,7 +136,7 @@
 
 // Responsive design
 
-@media (max-width: 899px) {
+@media (max-width: v.$bp-tablet) {
   .title {
     font-size: 2rem;
     line-height: px0;
@@ -163,7 +163,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: v.$bp-phone) {
   .row__title-box {
     padding: 0;
 

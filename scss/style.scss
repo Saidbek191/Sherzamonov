@@ -1,9 +1,9 @@
-/*  IIMPOR__SCSS__FILES  */
+/*  IMPORT__SCSS__FILES  */
 
 @use "./base/variables" as v;
 @use "./modules/mixins" as m;
-@use "./components/header";
 @use "./reset";
+@use "./components/header";
 @use "./components/home";
 @use "./components/featured-post";
 @use "./components/about-mission";

@@ -1,5 +1,5 @@
 /* RESETS */
-
+@use "./base/variables" as v;
 * {
   padding: 0;
   margin: 0;
@@ -14,13 +14,9 @@
   box-sizing: border-box;
 }
 
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
+:focus-visible {
+  outline: 2px solid v.$purple;
+  outline-offset: 2px;
 }
 
 nav,

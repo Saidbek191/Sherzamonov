@@ -1,12 +1,8 @@
-/* VARIABELS */
-
-$minWidth: 320px;
+/* VARIABLES */
 $maxWidth: 1440px;
-$maxWidthContainer: 1280px;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$bp-laptop: 1439px;
+$bp-tablet: 1023px;
+$bp-phone: 768px;
 $black: #232536;
 $yellow: #ffd050;
 $darkGrey: #4c4c4c;

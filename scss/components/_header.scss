@@ -110,12 +110,12 @@ header {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: v.$bp-phone) {
     position: absolute;
     top: 50px;
     right: 3%;
   }
-  @media (max-width: 425px) {
+  @media (max-width: v.$bp-phone) {
     button {
       border: none;
       padding: 0.4rem 0.2rem;
@@ -126,7 +126,7 @@ header {
 }
 
 /* RESPONSIVE FOR TABLET & PHONE */
-@media (max-width: 768px) {
+@media (max-width: v.$bp-phone) {
   body.lock {
     overflow: hidden;
   }
@@ -228,18 +228,13 @@ header {
 /* =========================================== */
 
 /* SOME BRAKE POINTS */
-@media (max-width: 1289px) {
+@media (max-width: v.$bp-laptop) {
   .head {
     padding: 0 1.4rem;
   }
 }
 
-// @media (max-width: 564px) {
-// 	.head-nav__logo {
-// 		font-size: 1.5rem;
-// 	}
-// }
-@media (max-width: 768px) {
+@media (max-width: v.$bp-phone) {
   .head__nav {
     display: none;
   }
