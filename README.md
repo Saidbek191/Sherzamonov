@@ -31,4 +31,4 @@ Live demo: https://saidbek191.github.io/Sherzamonov/
 4. To edit styles, turn on Live SASS Compiler (Watch Sass)
 
 ## Known limitations
-- The contact form doesn't work on GitHub Pages: it sends data through PHP, and GitHub Pages can't run PHP 
+- The contact form is sent through Web3Forms, because GitHub Pages can't run server-side code 

@@ -12,18 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     if (error === 0) {
       form.classList.add("_sending");
 
+      let formData = new FormData(form);
       let response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
       if (response.ok) {
         let result = await response.json();
-        alert(result.message);
-        formPreview.innerHTML = "";
         form.reset();
         form.classList.remove("_sending");
       } else {
-        alert("Warrning");
+        alert("Warning");
         form.classList.remove("_sending");
       }
     } else {
