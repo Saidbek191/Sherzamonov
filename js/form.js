@@ -18,15 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
         body: formData,
       });
       if (response.ok) {
-        let result = await response.json();
+        alert("Thank you! Your message has been sent. We will reply by email.");
         form.reset();
         form.classList.remove("_sending");
       } else {
-        alert("Warning");
+        alert("Sorry, the message could not be sent. Please try again later or write to sherzamonovalim@gmail.com");
         form.classList.remove("_sending");
       }
     } else {
-      alert("Fill the field");
+      alert("Please fill in all required fields.");
     }
   }
 
