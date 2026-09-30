@@ -14,6 +14,7 @@ Live demo: https://saidbek191.github.io/Sherzamonov/
 - Responsive layout: desktop, laptop, tablet, mobile
 - Semantic markup, pages pass validation on validator.w3.org
 - Keyboard navigation with visible focus outline
+- Contact form powered by Web3Forms
 
 ## Tech stack
 
@@ -30,5 +31,3 @@ Live demo: https://saidbek191.github.io/Sherzamonov/
 3. Run it with the Live Server extension. Double-clicking on `index.html` won't work: translations and articles are loaded with `fetch`, and browsers don't allow this for files opened directly
 4. To edit styles, turn on Live SASS Compiler (Watch Sass)
 
-## Known limitations
-- The contact form doesn't work on GitHub Pages: it sends data through PHP, and GitHub Pages can't run PHP 

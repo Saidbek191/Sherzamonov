@@ -9,28 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let error = formValidate(form);
 
-    let formData = new FormData(form);
-    formData.append("image", formImage.files[0]);
-
     if (error === 0) {
       form.classList.add("_sending");
 
-      let response = await fetch("sendmail.php", {
+      let formData = new FormData(form);
+      let response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
       if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
-        formPreview.innerHTML = "";
+        alert("Thank you! Your message has been sent. We will reply by email.");
         form.reset();
         form.classList.remove("_sending");
       } else {
-        alert("Warrning");
+        alert("Sorry, the message could not be sent. Please try again later or write to sherzamonovalim@gmail.com");
         form.classList.remove("_sending");
       }
     } else {
-      alert("Fill the field");
+      alert("Please fill in all required fields.");
     }
   }
 
@@ -75,35 +71,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-  }
-
-  const formImage = document.getElementById("formImage");
-
-  const formPreview = document.getElementById("formPreview");
-
-  formImage.addEventListener("change", () => {
-    uploadFile(formImage.files[0]);
-  });
-
-  function uploadFile(file) {
-    if (!["image/jpeg", "image/png", "image/gif"].includes(file.type)) {
-      alert("You can add only picture");
-      formImage.value = "";
-      return;
-    }
-
-    if (file.size > 2 * 1024 * 1024) {
-      alert("large size, only 2MB.");
-      return;
-    }
-
-    let reader = new FileReader();
-    reader.onload = function (e) {
-      formPreview.innerHTML = `<img src="${e.target.result}" alt="photo">`;
-    };
-    reader.onerror = function (e) {
-      alert("Error");
-    };
-    reader.readAsDataURL(file);
   }
 });

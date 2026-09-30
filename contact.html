@@ -78,6 +78,8 @@
         </div>
         <div class="form">
           <form action="#" id="form" class="form__body">
+            <input type="hidden" name="access_key" value="8d910e14-4ec5-4128-a32e-0a78ac232534">
+            <input type="hidden" name="subject" value="New message from FTF website" />
             <div class="form__item">
               <label for="formName" class="form__label">Name*:</label>
               <input
@@ -107,16 +109,6 @@
             <div class="form__item">
               <div class="form__label">Attach a photo</div>
               <div class="file">
-                <div class="file__item">
-                  <input
-                    id="formImage"
-                    accept=".jpg, .png, .gif"
-                    type="file"
-                    name="image"
-                    class="file__input"
-                  />
-                  <div class="file__button"><span>Choose file</span></div>
-                </div>
                 <div id="formPreview" class="file__preview"></div>
               </div>
               <button type="submit" class="form__button">Send Message</button>
